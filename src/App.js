@@ -11,6 +11,9 @@ function App() {
                 <h2>
                     Environment: {process.env.REACT_APP_ENV}
                 </h2>
+                <h1>
+                    Testing git flow
+                </h1>
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
         </div>
