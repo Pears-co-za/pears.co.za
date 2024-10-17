@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+## Local dev setup
+1. Create github account using your pears email.
+2. Clone repo - git clone https://github.com/Pears-co-za/pears.co.za.git
+3. Run `npm install` to ensure all the dev dependencies are downloaded
+4. Use .env.example to create your own .env file
+5. Use `npm start` to run the app locally. Open http://localhost:3000 to view it in your browser.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Staging Git flow - (Netlify builds and deploys staging when you push to the branch)
+### `Deploy feature branch to staging`
+1. Create (`git checkout -b branch-name`) and push your work onto feature branch
+2. `git checkout staging`
+3. `git pull && git reset --hard origin/main && git push --force` (resets staging branch & merges main into staging)
+4. Merge your branch into the staging branch - `git merge branch-name`
+5. Push your changes on to the staging branch - `git push` 
+
+### `Deploy direcly from the staging branch`
+1. `git checkout staging` & do your work.
+2. `git stash` to store your work and avoid merge conflicts later
+3. git pull && git reset --hard origin/main && git push --force (resets staging branch & merges main into staging)
+4. `git stash pop` (restore work)
+5. a) `git add .` or `git add -p`
+   b) `git commit -m 'commit message'`
+   c) `git push`
+
+## Production Git flow - (Netlify builds and deploys production when you push to the main branch)
+### `Create a PR (pull request)`
+1. Create (`git checkout -b branch-name`) and push your work onto feature branch
+2. Push changes to feature branch and create PR
+     a) `git add .` or `git add -p`
+     b) `git commit -m 'commit message'`
+     c) `git push`
+     d) Create PR by clicking the link on the terminal after pushing to the feature branch or going to [repo](https://github.com/Pears-co-za/pears.co.za) and clicking on `create pull request` for your branch.
+3. Get reviews and merge to production.
+
+### `Push direcly from the staging branch`
+1. Navigate to main branch `git checkout main`
+2. Pull latest changes - git pull
+3. Do your work and push changes to main branch
+
+## Netlify staging and production sites
+- https://pears-staging.netlify.app/
+- https://wearepears.co.za/
+
+TODO - Wiki for sensitive information 👀 
 
 ## Available Scripts
 
