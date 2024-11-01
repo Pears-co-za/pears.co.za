@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import doodle from './doodle-107.svg';
 import './App.css';
 
