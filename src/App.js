@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import doodle from './doodle-107.svg';
 import './App.css';
 
 function App() {
@@ -6,12 +7,11 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <h1>
-                    {process.env.REACT_APP_NAME} landing page
+                    {process.env.REACT_APP_NAME} landing page coming soon
                 </h1>
                 <h2>
-                    Environment: {process.env.REACT_APP_ENV}
                 </h2>
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={doodle} className="App-logo" alt="pears bee logo" />
             </header>
         </div>
     );
