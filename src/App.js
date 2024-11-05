@@ -6,7 +6,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <h1>
-                    {process.env.REACT_APP_NAME} landing page coming soon
+                    {process.env.REACT_APP_NAME} landing page coming soon. very soon
                 </h1>
                 <h2>
                 </h2>
