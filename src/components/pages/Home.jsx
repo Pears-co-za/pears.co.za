@@ -1,7 +1,13 @@
+import { StyledHightlightText, StyledH1 } from "../../styles/Home.styles";
+
 function Home() {
     return (
         <div>
-            Inspired by nature, driven by technology, perfected in partnership. Welcome to Pears.
+            <StyledH1>
+                Inspired by nature, driven by technology, perfected in
+                partnership.
+                <StyledHightlightText>Welcome to Pears.</StyledHightlightText>
+            </StyledH1>
         </div>
     );
 }
