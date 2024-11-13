@@ -64,7 +64,7 @@ export const StyledTalkButton = styled(Link)`
 `;
 
 export const StyledCopyright = styled.p`
-    color: ${colors.dark70};
+    color: ${colors.dark7, 0};
     font-size: 1rem;
     font-weight: medium;
     margin-top: auto;
