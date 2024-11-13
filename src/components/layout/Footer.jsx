@@ -17,11 +17,7 @@ function Footer() {
                 <div>
                     <p>Contact</p>
                     <StyledHeading>
-                        Let's start
-                        <br />
-                        creating
-                        <br />
-                        together
+                        Let's start creating together
                     </StyledHeading>
                     <ButtonCTA to="/contact">Let's talk</ButtonCTA>
                 </div>

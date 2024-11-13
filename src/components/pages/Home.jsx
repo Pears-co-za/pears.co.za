@@ -6,6 +6,14 @@ function Home() {
             <StyledH1>
                 Inspired by nature, driven by technology, perfected in
                 partnership.
+                {/* <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/> */}
                 <StyledHightlightText>Welcome to Pears.</StyledHightlightText>
             </StyledH1>
         </div>

@@ -5,15 +5,16 @@ import { colors } from "../constants";
 export const StyledFooterContainer = styled.footer`
     background-color: ${colors.yellow};
     padding: 2rem 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    /* min-height: 50vh; */
 `;
 
 export const StyledLeftSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 `;
 
 export const StyledRightSection = styled.div`
@@ -27,6 +28,7 @@ export const StyledHeading = styled.h1`
     font-weight: 500;
     line-height: 1.1;
     margin-bottom: 2rem;
+    width: 80%;
 `;
 
 export const StyledNavLinks = styled.div`
