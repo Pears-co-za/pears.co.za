@@ -46,9 +46,10 @@ export const StyledNavLink = styled(Link)`
 `;
 
 export const StyledTalkButton = styled(Link)`
-    background-color: white;
+    background-color: ${colors.grey5};
     color: black;
     padding: 0.75rem 1.5rem;
+    border: 1px solid transparent;
     border-radius: 100px;
     text-decoration: none;
     display: inline-flex;
@@ -57,13 +58,14 @@ export const StyledTalkButton = styled(Link)`
     width: fit-content;
 
     &:hover {
-        transform: translateY(-2px);
-        transition: transform 0.2s ease;
+      border: 1px solid black;
+      background-color: ${colors.white};
     }
 `;
 
 export const StyledCopyright = styled.p`
-    color: ${colors.black};
+    color: ${colors.dark70};
     font-size: 1rem;
+    font-weight: medium;
     margin-top: auto;
 `;

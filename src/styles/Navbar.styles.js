@@ -15,7 +15,7 @@ export const StyledLogo = styled(Link)`
   align-items: center;
   gap: 0.5rem;
   font-size: 1.5rem;
-  color: #000;
+  color: ${colors.black};
   text-decoration: none;
   font-weight: 500;
 
@@ -30,7 +30,7 @@ export const StyledNavLinks = styled.div`
     gap: 2rem;
 `;
 export const StyledNavLink = styled(Link)`
-    color: #000;
+    color: ${colors.black};
     text-decoration: none;
     font-size: 1rem;
 

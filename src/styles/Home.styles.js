@@ -8,5 +8,5 @@ export const StyledH1 = styled.p`
 `;
 
 export const StyledHightlightText = styled.span`
-    color: ${colors.greyYellow};
+    color: ${colors.paleYellow};
 `;
