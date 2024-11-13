@@ -1,16 +1,21 @@
-import "./styles/App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+
+import Home from './components/pages/Home';
+// import About from './pages/About';
+// import Contact from './pages/Contact';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img
-                    src="./assets/logo-temp.jpeg"
-                    className="pears-logo"
-                    alt="pears bee logo"
-                />
-            </header>
-        </div>
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                {/* <Route path="/about" element={<About />} /> */}
+                {/* <Route path="/contact" element={<Contact />} /> */}
+            </Routes>
+        </Router>
     );
 }
 
