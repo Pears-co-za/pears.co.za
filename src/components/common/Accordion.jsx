@@ -63,7 +63,8 @@ function AccordionItem({ title, content, isOpen, onClick }) {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 >
-                    <polyline points="6 9 12 15 18 9"></polyline>
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
                 </svg>
             </StyledAccordionHeader>
             <StyledAccordionContent isOpen={isOpen}>
