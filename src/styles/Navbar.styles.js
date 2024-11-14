@@ -13,7 +13,7 @@ export const StyledNavContainer = styled.nav`
   left: 0;
   right: 0;
   transform: translateY(${({ isVisible }) => (isVisible ? '0' : '-100%')});
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   z-index: 1000;
 `;
 
@@ -43,5 +43,6 @@ export const StyledNavLink = styled(Link)`
 
     &:hover {
         text-decoration: underline;
+        color: ${colors.dark70};
     }
 `;

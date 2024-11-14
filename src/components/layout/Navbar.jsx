@@ -45,8 +45,7 @@ function Navbar() {
                     <StyledNavLink to="/contact">Contact</StyledNavLink>
                 </StyledNavLinks>
             </StyledNavContainer>
-            {/* Add padding to prevent content from going under navbar */}
-            <div style={{ paddingTop: "74px" }} /> {/* Adjust this value to match your navbar height */}
+            <div style={{ paddingTop: "74px" }} />
         </>
     );
 }
