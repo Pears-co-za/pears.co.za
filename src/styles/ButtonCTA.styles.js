@@ -13,7 +13,7 @@ export const StyledButton = styled(Link)`
   width: fit-content;
   border: 1px solid transparent;
   transition: all 0.2s ease;
-  
+
   svg {
     transform: rotate(-45deg);
     transition: transform 0.2s ease;
