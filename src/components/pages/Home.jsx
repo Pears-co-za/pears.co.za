@@ -1,5 +1,6 @@
 import ButtonCTA from "../common/ButtonCTA";
-import Accordion from '../common/Accordion';
+import Accordion from "../common/Accordion";
+import FadeIn from "../common/FadeIn";
 import {
     StyledHightlightText,
     StyledDisplayHeading,
@@ -11,24 +12,37 @@ import {
 function Home() {
     return (
         <StyledHomeContainer>
-            <StyledDisplayHeading>
-                Inspired by nature, driven by technology, perfected in
-                partnership.
-                <StyledHightlightText>Welcome to Pears.</StyledHightlightText>
-            </StyledDisplayHeading>
-            <Styled3ColSection>
-                <p>Our Story</p>
-                <StyledH1>
-                    We're a team of IT specialists inspired by nature's harmony.
-                    <StyledHightlightText>
-                        {" "}
-                        Let us help you reach new heights.
-                    </StyledHightlightText>
-                </StyledH1>
-                <ButtonCTA to="/about">About Us</ButtonCTA>
-            </Styled3ColSection>
-            <p>Services</p>
-            <Accordion />
+            <div>
+                <FadeIn>
+                    <StyledDisplayHeading>
+                        Inspired by nature, driven by technology, perfected in
+                        partnership.
+                        <StyledHightlightText>
+                            Welcome to Pears.
+                        </StyledHightlightText>
+                    </StyledDisplayHeading>
+                </FadeIn>
+
+                <FadeIn delay={200}>
+                    <Styled3ColSection>
+                        <p>Our Story</p>
+                        <StyledH1>
+                            We're a team of IT specialists inspired by nature's
+                            harmony.
+                            <StyledHightlightText>
+                                {" "}
+                                Let us help you reach new heights.
+                            </StyledHightlightText>
+                        </StyledH1>
+                        <ButtonCTA to="/about">About Us</ButtonCTA>
+                    </Styled3ColSection>
+                </FadeIn>
+
+                <FadeIn delay={400}>
+                    <p>Services</p>
+                    <Accordion />
+                </FadeIn>
+            </div>
         </StyledHomeContainer>
     );
 }
