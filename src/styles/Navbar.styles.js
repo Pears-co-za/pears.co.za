@@ -7,7 +7,14 @@ export const StyledNavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-    background-color: ${colors.yellow};
+  background-color: ${colors.yellow};
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(${({ isVisible }) => (isVisible ? '0' : '-100%')});
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 `;
 
 export const StyledLogo = styled(Link)`
