@@ -7,7 +7,7 @@ export const StyledFooterContainer = styled.footer`
     padding: 2rem 4rem;
     display: flex;
     justify-content: space-around;
-    /* min-height: 50vh; */
+    min-height: 50vh;
 `;
 
 export const StyledLeftSection = styled.div`
@@ -28,7 +28,7 @@ export const StyledHeading = styled.h1`
     font-weight: 500;
     line-height: 1.1;
     margin-bottom: 2rem;
-    width: 80%;
+    max-width: 65%;
 `;
 
 export const StyledNavLinks = styled.div`
@@ -66,7 +66,7 @@ export const StyledTalkButton = styled(Link)`
 `;
 
 export const StyledCopyright = styled.p`
-    color: ${colors.dark7, 0};
+    color: ${colors.dark70};
     font-size: 1rem;
     font-weight: medium;
     margin-top: auto;

@@ -7,6 +7,7 @@ import {
     StyledHomeContainer,
     Styled3ColSection,
     StyledH1,
+    StyledServicesSection,
 } from "../../styles/Home.styles";
 
 function Home() {
@@ -39,8 +40,10 @@ function Home() {
                 </FadeIn>
 
                 <FadeIn delay={400}>
+                    <StyledServicesSection>
                     <p>Services</p>
                     <Accordion />
+                    </StyledServicesSection>
                 </FadeIn>
             </div>
         </StyledHomeContainer>
