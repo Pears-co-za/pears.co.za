@@ -27,8 +27,8 @@ function Footer() {
             <StyledRightSection>
                 <StyledNavLinks>
                     <StyledNavLink to="/">Home</StyledNavLink>
-                    <StyledNavLink to="/about">About</StyledNavLink>
-                    <StyledNavLink to="/contact">Contact</StyledNavLink>
+                    <StyledNavLink to="/">About</StyledNavLink>
+                    <StyledNavLink to="/">Contact</StyledNavLink>
                 </StyledNavLinks>
             </StyledRightSection>
         </StyledFooterContainer>

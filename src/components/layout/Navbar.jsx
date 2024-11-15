@@ -41,8 +41,8 @@ function Navbar() {
                     pears
                 </StyledLogo>
                 <StyledNavLinks>
-                    <StyledNavLink to="/about">About</StyledNavLink>
-                    <StyledNavLink to="/contact">Contact</StyledNavLink>
+                    <StyledNavLink to="/">About</StyledNavLink>
+                    <StyledNavLink to="/">Contact</StyledNavLink>
                 </StyledNavLinks>
             </StyledNavContainer>
             <div style={{ paddingTop: "74px" }} />
