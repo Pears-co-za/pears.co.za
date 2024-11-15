@@ -5,30 +5,30 @@ function FadeIn({ children, delay = 0 }) {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const currentElement = sectionRef.current; // Store ref in variable
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Add delay if specified
           setTimeout(() => {
             entry.target.classList.add('visible');
           }, delay);
-          // Once animation is triggered, we can unobserve
           observer.unobserve(entry.target);
         }
       },
       {
-        threshold: 0.1, // Trigger when at least 10% of the element is visible
-        rootMargin: '50px', // Start animation slightly before the element comes into view
+        threshold: 0.1,
+        rootMargin: '50px',
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, [delay]);

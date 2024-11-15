@@ -22,7 +22,7 @@ export const StyledAccordionHeader = styled.button`
   text-align: left;
 
   svg {
-    transform: ${({ isOpen }) => isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
+    transform: ${({ $isOpen }) => $isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
     transition: transform 0.3s ease;
   }
 `;
@@ -34,11 +34,11 @@ export const StyledAccordionTitle = styled.h2`
 `;
 
 export const StyledAccordionContent = styled.div`
-  max-height: ${({ isOpen }) => (isOpen ? '500px' : '0')};
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+max-height: ${({ $isOpen }) => ($isOpen ? '500px' : '0')};
+opacity: ${({ $isOpen }) => ($isOpen ? '1' : '0')};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  padding-bottom: ${({ isOpen }) => (isOpen ? '2rem' : '0')};
+  padding-bottom: ${({ $isOpen }) => ($isOpen ? '2rem' : '0')};
 `;
 
 export const StyledAccordionList = styled.ul`

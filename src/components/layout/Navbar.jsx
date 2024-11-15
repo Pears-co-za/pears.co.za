@@ -31,7 +31,7 @@ function Navbar() {
 
     return (
         <>
-            <StyledNavContainer isVisible={isVisible}>
+            <StyledNavContainer $isVisible={isVisible}>
                 <StyledLogo to="/">
                     <img
                         src="./assets/pears-logo-black.jpeg"

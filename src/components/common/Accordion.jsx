@@ -51,7 +51,7 @@ const accordionData = [
 function AccordionItem({ title, content, isOpen, onClick }) {
     return (
         <StyledAccordionItem>
-            <StyledAccordionHeader onClick={onClick} isOpen={isOpen}>
+            <StyledAccordionHeader onClick={onClick} $isOpen={isOpen}>
                 <StyledAccordionTitle>{title}</StyledAccordionTitle>
                 <svg
                     width="24"
@@ -67,7 +67,7 @@ function AccordionItem({ title, content, isOpen, onClick }) {
                     <polyline points="19 12 12 19 5 12"></polyline>
                 </svg>
             </StyledAccordionHeader>
-            <StyledAccordionContent isOpen={isOpen}>
+            <StyledAccordionContent $isOpen={isOpen}>
                 {content.length > 0 && (
                     <StyledAccordionList>
                         {content.map((item, index) => (
