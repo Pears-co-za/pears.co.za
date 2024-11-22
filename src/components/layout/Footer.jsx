@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonCTA from '../common/ButtonCTA';
+import { ButtonCTA } from '../common/ButtonCTA';
 import {
     StyledFooterContainer,
     StyledLeftSection,
