@@ -41,7 +41,7 @@ function Navbar() {
                     pears
                 </StyledLogo>
                 <StyledNavLinks>
-                    <StyledNavLink to="/">About</StyledNavLink>
+                    <StyledNavLink to="/about">About</StyledNavLink>
                     <StyledNavLink to="/">Contact</StyledNavLink>
                 </StyledNavLinks>
             </StyledNavContainer>
