@@ -14,18 +14,8 @@ import {
 function Contact() {
     return (
         <StyledContactContainer>
-            {/* <FadeIn>
-                    <StyledDisplayHeading>
-                        Inspired by nature, driven by technology, perfected in
-                        partnership.
-                        <StyledHightlightText>
-                            Welcome to Pears.
-                        </StyledHightlightText>
-                    </StyledDisplayHeading>
-                </FadeIn> */}
 
             <FadeIn delay={200}>
-                {/* <div className="contactUsContainer"> */}
 
                 <StyledDisplayHeading>
 
@@ -43,17 +33,21 @@ function Contact() {
                             </StyledH2>
                         </div>
 
-                        <p className={`${styles.paragraphs}`}>Get in touch</p>
+                        <p id={`${styles.getInTouch}`} className={`${styles.paragraphs}`}>
+                            Get in touch
+                        </p>
 
                         <div>
-                            <p>info@wearepears.co.za</p>
+                            <p id={`${styles.blackText}`} >info@wearepears.co.za</p>
                             <p className={`${styles.paragraphs} ${styles.phone} `}>Phone</p>
-                            <p>+27 76 091 7529</p>
+                            <p id={`${styles.blackText}`}>+27 76 091 7529</p>
                         </div>
 
                         <div>
-                            <p className={`${styles.paragraphs} ${styles.address} `}>Address</p>
-                            <p>Founders Hill, Sandton, Gauteng</p>
+                            <p className={`${styles.paragraphs} ${styles.address}`}>
+                                Address
+                            </p>
+                            <p id={`${styles.blackText}`} >Founders Hill, Sandton, Gauteng</p>
                         </div>
                     </LeftPanel>
 
@@ -63,16 +57,10 @@ function Contact() {
                     </RightPanel>
 
                 </StyledDisplayHeading>
+
             </FadeIn>
 
-            {/* <FadeIn delay={400}>
-                    <StyledServicesSection>
-                    <p>Services</p>
-                    <Accordion />
-                    </StyledServicesSection>
-                </FadeIn> */}
-
-        </StyledContactContainer>
+        </StyledContactContainer >
     );
 }
 

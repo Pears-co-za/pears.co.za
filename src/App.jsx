@@ -4,7 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
-import ErrorNotFound from './components/pages/ErrorNotFound';
+import PageNotFound from './components/pages/PageNotFound';
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 {/* <Route path="/about" element={<About />} /> */}
                 <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<ErrorNotFound />} /> {/* Catch-all route */}
+                <Route path="*" element={<PageNotFound />} /> {/* Catch-all route */}
             </Routes>
             <Footer />
         </Router>

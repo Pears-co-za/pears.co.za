@@ -31,15 +31,16 @@ export const StyledButton = styled(Link)`
 
 export const StyledSocialMediaButton = styled(Link)`
   color: black;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem 0rem; 
   text-decoration: none;
-  font-weight:450;
+  font-weight:500;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-width: 50%;
-  //border: 1px solid red;
+  border: 1px solid blue;
   transition: all 0.2s ease;
+  font-size: 1.1rem;
 
   svg {
     transform: rotate(-45deg);

@@ -9,7 +9,7 @@ import {
 import { GoHomeButtonCTA } from "../common/ButtonCTA";
 import FadeIn from "../common/FadeIn";
 
-const ErrorNotFound = () => {
+const PageNotFound = () => {
     return (
         <Styled404Container>
             <FadeIn delay={200}>
@@ -30,4 +30,4 @@ const ErrorNotFound = () => {
     );
 };
 
-export default ErrorNotFound;
+export default PageNotFound;

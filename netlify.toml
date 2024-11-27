@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "./src/components/pages/ErrorPage404.jsx" 
+  status = 404
+   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "./src/components/pages/ErrorPage404.jsx" 
+  status = 302
+  force = true
+  
