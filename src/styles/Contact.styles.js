@@ -30,7 +30,6 @@ export const LeftPanel = styled.div`
     flex: 2;
     justify-content: space-between;
     word-break: normal;
-    border: 1px solid red;
 `;
 export const RightPanel = styled.div`
     display:flex;
@@ -45,10 +44,6 @@ export const RightPanel = styled.div`
         width: min-content;
         gap: 1rem;
         margin: 1.5rem auto 0rem;
-    }
-
-    @media only screen and (max-width: 500px){
-        // padding-right: 2rem;
     }
 `;
 
