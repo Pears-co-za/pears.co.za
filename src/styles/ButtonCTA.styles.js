@@ -41,6 +41,28 @@ export const StyledSocialMediaButton = styled(Link)`
   transition: all 0.2s ease;
   font-size: 1.1rem;
 
+  @media only screen and (max-width: 600px){
+        background-color: #F0F0F0;
+        color: black;
+        padding: 0.75rem 1.5rem;
+        border-radius: 100px;
+
+         svg {
+            transform: rotate(-45deg);
+            transition: transform 0.2s ease;
+        }
+        
+        &:hover {
+            background-color: white;
+            border: 1px solid black;
+            
+            svg {
+                transform: rotate(0deg);
+            }
+        }
+   }
+
+
   svg {
     transform: rotate(-45deg);
     transition: transform 0.2s ease;
@@ -69,6 +91,10 @@ export const StyledGoHomeButton = styled(Link)`
   font-size: 1.2rem;
   border: 1px solid transparent;
   transition: all 0.2s ease;
+
+   @media only screen and (max-width: 600px){
+        font-size: 1rem;
+    }
 
   svg {
     transform: rotate(-45deg);

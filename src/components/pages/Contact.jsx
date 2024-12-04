@@ -1,5 +1,4 @@
 import { SocialMediaButtonCTA } from "../common/ButtonCTA";
-// import Accordion from "../common/Accordion";
 import FadeIn from "../common/FadeIn";
 import styles from '../modules/contact.module.css';
 import {
