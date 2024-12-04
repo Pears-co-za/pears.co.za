@@ -3,9 +3,6 @@ import styled from "styled-components";
 
 export const StyledContactContainer = styled.div`
     padding: 2rem 4rem;
-    // width: 100%;
-    // min-width:350px;
-    // margin: 6rem 0rem;
 
     @media only screen and (min-width: 1540px){
         padding: 2rem 14rem;
@@ -13,6 +10,8 @@ export const StyledContactContainer = styled.div`
 
     @media only screen and (max-width: 500px){
         padding: 2rem 1rem;
+        width: 100%;
+        min-width:350px;
     }
 `;
 
@@ -31,6 +30,7 @@ export const LeftPanel = styled.div`
     flex: 2;
     justify-content: space-between;
     word-break: normal;
+    border: 1px solid red;
 `;
 export const RightPanel = styled.div`
     display:flex;
@@ -38,7 +38,6 @@ export const RightPanel = styled.div`
     justify-content: flex-end;
     flex: 0 0 300px;
     margin-top: 1.5rem;
-    // border: 1px solid red;
 
 
     @media only screen and (max-width: 800px){
@@ -49,7 +48,7 @@ export const RightPanel = styled.div`
     }
 
     @media only screen and (max-width: 500px){
-        padding-right: 2rem;
+        // padding-right: 2rem;
     }
 `;
 
