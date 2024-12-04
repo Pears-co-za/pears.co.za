@@ -38,7 +38,6 @@ export const StyledSocialMediaButton = styled(Link)`
   align-items: center;
   justify-content: space-between;
   min-width: 50%;
-  border: 1px solid blue;
   transition: all 0.2s ease;
   font-size: 1.1rem;
 

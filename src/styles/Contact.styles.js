@@ -2,33 +2,30 @@ import styled from "styled-components";
 
 
 export const StyledContactContainer = styled.div`
-    padding: 2rem 14rem;
-    @media only screen and (max-width: 1540px){
-        padding: 2rem 8rem;
+    padding: 2rem 4rem;
+    min-width: 100vw;
+    @media only screen and (min-width: 1540px){
+        padding: 2rem 14rem;
     }
 
     @media only screen and (max-width: 500px){
-        //height: 90vh;
-        border: 1px black dotted;
+        border: 4px black dotted;
         padding: 2rem 1rem;
     }
 `;
 
 export const StyledDisplayHeading = styled.div`
     display:flex;
-    // padding: 2rem 4rem;
-    //height: 60vh;
     border: 1px red solid;
     flex-wrap: wrap;
     
     // 0 - 1540px (width) & 0 - 890px (height)
     @media only screen and (max-width: 1540px) and (max-height: 890px){
-        //height: 85vh;
+  
     }
 
     @media only screen and (max-width: 500px){
-        border: 1px red solid;
-        padding: 0rem 4rem;
+        padding: 0rem 2rem;
     }
         
 `;
@@ -37,10 +34,8 @@ export const LeftPanel = styled.div`
     flex-direction: column;
     height: 90%; 
     flex: 2;
-    //border: 1px blue solid;
     justify-content: space-between;
     word-break: normal;
-    // flex-wrap: wrap
 `;
 export const RightPanel = styled.div`
     display:flex;
@@ -49,16 +44,20 @@ export const RightPanel = styled.div`
     justify-content: flex-end;
     border: 1px red solid;
     flex: 0 0 300px;
+    margin-top: 1.5rem;
 
-    @media only screen and (max-width: 870px){
-        justify-content: flex-start;
+    @media only screen and (max-width: 800px){
         flex-shrink: 2;
-        min-width: 200px
+        width: min-content;
+        border: 1px purple solid;
     }
 
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 400px){
+        // border: 1px red solid;
+        flex-shrink: 2;
+        min-width: 200px;
         border: 1px black dotted;
-        height: fit-content;
+        margin: 1.5rem 1rem 0rem;
     }
 `;
 
@@ -80,7 +79,7 @@ export const StyledH2 = styled.h2`
 
     @media only screen and (max-width: 1540px){
         font-size: 1.1rem;
-        border: 1px red solid;
+        // border: 1px red solid;
     }
 `;
 
