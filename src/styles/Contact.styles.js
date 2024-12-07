@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const StyledContactContainer = styled.div`
     padding: 2rem 4rem;
 
@@ -22,7 +21,6 @@ export const StyledDisplayHeading = styled.div`
     @media only screen and (max-width: 500px){
         padding: 0rem 1rem;
     }
-        
 `;
 export const LeftPanel = styled.div`
     display:flex;
