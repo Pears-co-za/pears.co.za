@@ -11,6 +11,7 @@ export const StyledContactContainer = styled.div`
         padding: 2rem 1rem;
         width: 100%;
         min-width:350px;
+        margin-bottom: 0.5rem;
     }
 `;
 
