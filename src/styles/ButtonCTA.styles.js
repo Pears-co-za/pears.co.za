@@ -62,7 +62,6 @@ export const StyledSocialMediaButton = styled(Link)`
         }
    }
 
-
   svg {
     transform: rotate(-45deg);
     transition: transform 0.2s ease;
@@ -111,4 +110,3 @@ export const StyledGoHomeButton = styled(Link)`
     }
   }
 `;
-

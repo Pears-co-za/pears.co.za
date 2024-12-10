@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../modules/404.module.css';
 import {
     Styled404Container,

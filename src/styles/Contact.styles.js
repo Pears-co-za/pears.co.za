@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledContactContainer = styled.div`
-    padding: 2rem 4rem;
-
+    padding: 3rem 4rem;
+    margin-bottom: 2rem;
     @media only screen and (min-width: 1540px){
         padding: 2rem 14rem;
     }

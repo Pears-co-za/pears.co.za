@@ -3,6 +3,7 @@ import { colors } from "../constants";
 
 export const Styled404Container = styled.div`
     padding: 1rem 2rem;
+    margin-bottom: 4rem;
      @media only screen and (max-width: 600px){
         padding: 1rem 1rem;
     }
@@ -11,11 +12,10 @@ export const Styled404Container = styled.div`
 export const StyledDisplayHeading = styled.div`
     display:flex;
     flex-direction: column;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     flex-wrap:wrap;
     word-break: normal;
 `;
-
 
 export const StyledHightlightText = styled.span`
     color: ${colors.dark50};
@@ -31,9 +31,3 @@ export const StyledH1 = styled.h1`
         font-size: 2.2rem;
     }
 `;
-
-
-// export const StyledWeight = styled.div`
-//     font-weight: 450;
-//     color: black;
-// `;

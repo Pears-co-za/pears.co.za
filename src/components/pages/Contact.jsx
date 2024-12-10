@@ -51,8 +51,8 @@ function Contact() {
                     </LeftPanel>
 
                     <RightPanel>
-                        <SocialMediaButtonCTA to="/about">Twitter</SocialMediaButtonCTA>
-                        <SocialMediaButtonCTA to="/about">Instagram</SocialMediaButtonCTA>
+                        <SocialMediaButtonCTA to="/twitter">Twitter</SocialMediaButtonCTA>
+                        <SocialMediaButtonCTA to="/instagram">Instagram</SocialMediaButtonCTA>
                     </RightPanel>
 
                 </StyledDisplayHeading>
