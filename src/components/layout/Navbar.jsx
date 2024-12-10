@@ -42,7 +42,7 @@ function Navbar() {
                 </StyledLogo>
                 <StyledNavLinks>
                     <StyledNavLink to="/">About</StyledNavLink>
-                    <StyledNavLink to="/">Contact</StyledNavLink>
+                    <StyledNavLink to="/contact">Contact</StyledNavLink>
                 </StyledNavLinks>
             </StyledNavContainer>
             <div style={{ paddingTop: "74px" }} />
