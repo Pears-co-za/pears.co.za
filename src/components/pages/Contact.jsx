@@ -1,6 +1,6 @@
 import { SocialMediaButtonCTA } from "../common/ButtonCTA";
 import FadeIn from "../common/FadeIn";
-import styles from '../modules/contact.module.css';
+import styles from '../../styles/modules/contact.module.css';
 import {
     StyledContactContainer,
     StyledH1,
