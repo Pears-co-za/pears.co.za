@@ -1,4 +1,4 @@
-import ButtonCTA from "../common/ButtonCTA";
+import { ButtonCTA } from "../common/ButtonCTA";
 import Accordion from "../common/Accordion";
 import FadeIn from "../common/FadeIn";
 import {
@@ -41,8 +41,8 @@ function Home() {
 
                 <FadeIn delay={400}>
                     <StyledServicesSection>
-                    <p>Services</p>
-                    <Accordion />
+                        <p>Services</p>
+                        <Accordion />
                     </StyledServicesSection>
                 </FadeIn>
             </div>
