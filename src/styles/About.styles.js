@@ -29,7 +29,7 @@ export const AboutStyledDisplayHeading = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 2.5rem;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -62,7 +62,7 @@ export const StyledAboutH1 = styled.h1`
   @media (max-width: 480px) {
     font-size: 1.8rem;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -80,7 +80,7 @@ export const StyledAboutH2 = styled.h2`
   @media (max-width: 480px) {
     font-size: 1.6rem;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 `;
 export const StyledColSections = styled.div`
@@ -92,9 +92,9 @@ export const StyledColSections = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
   }
 `;
 
@@ -118,7 +118,7 @@ export const StyledAboutSubheading = styled.h3`
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -130,7 +130,7 @@ export const StyledAboutContent = styled.p`
 
   @media (max-width: 480px) {
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -142,7 +142,7 @@ export const StyledAboutSideHeading = styled.p`
 
   @media (max-width: 768px) {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 `;
 
@@ -162,7 +162,7 @@ export const Styled3ColSection = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 
@@ -181,6 +181,6 @@ export const StyledOurWorkH1 = styled.h1`
   @media (max-width: 480px) {
     font-size: 1.8rem;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 `;
