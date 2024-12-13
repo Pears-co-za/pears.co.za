@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { colors } from "../constants";
 
 export const StyledFooterContainer = styled.footer`
-    background-color: ${colors.yellow};
+    background-color: ${colors.black};
     padding: 2rem 4rem;
     display: flex;
     justify-content: space-around;
@@ -15,6 +15,8 @@ export const StyledLeftSection = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    color: ${colors.white};
+
 `;
 
 export const StyledRightSection = styled.div`
@@ -38,14 +40,18 @@ export const StyledNavLinks = styled.div`
 `;
 
 export const StyledNavLink = styled(Link)`
-    color: ${colors.black};
+    color: ${colors.white};
     text-decoration: none;
     font-size: 1.1rem;
 
     &:hover {
         text-decoration: underline;
-        color: ${colors.dark70};
+        color: ${colors.yellow};
     }
+`;
+
+export const StyledHightlightText = styled.span`
+    color: ${colors.paleYellow};
 `;
 
 export const StyledTalkButton = styled(Link)`
@@ -71,4 +77,6 @@ export const StyledCopyright = styled.p`
     font-size: 1rem;
     font-weight: medium;
     margin-top: auto;
+    color: ${colors.white};
+
 `;

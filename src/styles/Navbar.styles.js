@@ -7,7 +7,7 @@ export const StyledNavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${colors.yellow};
+  background-color: ${colors.black};
   position: fixed;
   top: 0;
   left: 0;
@@ -37,12 +37,12 @@ export const StyledNavLinks = styled.div`
     gap: 2rem;
 `;
 export const StyledNavLink = styled(Link)`
-    color: ${colors.black};
+    color: ${colors.white};
     text-decoration: none;
     font-size: 1rem;
 
     &:hover {
         text-decoration: underline;
-        color: ${colors.dark70};
+        color: ${colors.yellow};
     }
 `;
