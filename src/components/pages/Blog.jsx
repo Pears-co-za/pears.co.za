@@ -7,7 +7,7 @@ import {
 } from "../../styles/Blog.styles";
 import FadeIn from "../common/FadeIn";
 
-const PageNotFound = () => {
+const Blog = () => {
     return (
         <StyledBlogContainer>
             <FadeIn delay={200}>
@@ -19,4 +19,4 @@ const PageNotFound = () => {
     );
 };
 
-export default PageNotFound;
+export default Blog;
