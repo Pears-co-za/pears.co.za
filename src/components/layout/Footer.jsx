@@ -8,6 +8,7 @@ import {
     StyledNavLinks,
     StyledNavLink,
     StyledCopyright,
+    StyledHightlightText,
 } from "../../styles/Footer.styles";
 
 function Footer() {
@@ -17,7 +18,7 @@ function Footer() {
                 <div>
                     <p>Contact</p>
                     <StyledHeading>
-                        Let's start creating together
+                        Let's start creating <StyledHightlightText>together</StyledHightlightText> 
                     </StyledHeading>
                     <ButtonCTA to="/contact">Let's talk</ButtonCTA>
                 </div>
@@ -27,8 +28,9 @@ function Footer() {
             <StyledRightSection>
                 <StyledNavLinks>
                     <StyledNavLink to="/">Home</StyledNavLink>
-                    <StyledNavLink to="/">About</StyledNavLink>
+                    <StyledNavLink to="/about">About</StyledNavLink>
                     <StyledNavLink to="/contact">Contact</StyledNavLink>
+                    <StyledNavLink to="/blog">Blog</StyledNavLink>
                 </StyledNavLinks>
             </StyledRightSection>
         </StyledFooterContainer>
