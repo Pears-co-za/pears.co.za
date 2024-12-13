@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact';
 import Blog from './components/pages/Blog';
 import PageNotFound from './components/pages/PageNotFound';
 
+
 function App() {
     return (
         <Router>
