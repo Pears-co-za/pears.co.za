@@ -34,7 +34,7 @@ function Navbar() {
             <StyledNavContainer $isVisible={isVisible}>
                 <StyledLogo to="/">
                     <img
-                        src="./assets/pears-logo-black.jpeg"
+                        src="./assets/pears-logo-with-name.png"
                         className="pears-logo"
                         alt="pears bee logo"
                     />

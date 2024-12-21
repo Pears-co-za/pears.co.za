@@ -12,7 +12,7 @@ const Blog = () => {
         <StyledBlogContainer>
             <FadeIn delay={200}>
                 <StyledDisplayHeading>
-                    <StyledH1>This is the Blog</StyledH1>
+                    <StyledH1>This is the <StyledHightlightText>Blog</StyledHightlightText></StyledH1>
                 </StyledDisplayHeading>
             </FadeIn>
         </StyledBlogContainer>
