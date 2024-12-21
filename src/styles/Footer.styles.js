@@ -8,6 +8,12 @@ export const StyledFooterContainer = styled.footer`
     display: flex;
     justify-content: space-around;
     min-height: 50vh;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+    }
 `;
 
 export const StyledLeftSection = styled.div`
@@ -16,6 +22,8 @@ export const StyledLeftSection = styled.div`
     justify-content: space-between;
     gap: 10px;
     color: ${colors.white};
+
+
 
 `;
 
@@ -31,6 +39,15 @@ export const StyledHeading = styled.h1`
     line-height: 1.1;
     margin-bottom: 2rem;
     max-width: 65%;
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
 `;
 
 export const StyledNavLinks = styled.div`

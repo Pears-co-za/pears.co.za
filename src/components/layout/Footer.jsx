@@ -16,7 +16,6 @@ function Footer() {
         <StyledFooterContainer>
             <StyledLeftSection>
                 <div>
-                    <p>Contact</p>
                     <StyledHeading>
                         Let's start creating <StyledHightlightText>together</StyledHightlightText> 
                     </StyledHeading>
