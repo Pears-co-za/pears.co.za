@@ -1,6 +1,6 @@
 import { StyledHomeContainer } from "../../styles/Home.styles";
 import FadeIn from "../common/FadeIn";
-import ButtonCTA from "../common/ButtonCTA";
+import {ButtonCTA} from "../common/ButtonCTA";
 import {
   AboutStyledDisplayHeading,
   StyledHightlightText,
