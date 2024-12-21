@@ -104,7 +104,7 @@ export const StyledNavLink = styled(Link)`
     font-size: 1rem;
     position: relative;
     padding-bottom: 2px; // Add padding for the underline
-
+/* margin-right: 2rem; */
     &:after {
         content: '';
         position: absolute;
