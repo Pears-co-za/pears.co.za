@@ -102,7 +102,7 @@ function Home() {
                 </StyledCTAWrapper>
             </StyledCollaborationSection>
             <StyledHomeContainer>
-                Other stuffs
+                Other stuffs soon come...
                 {/* Rest of the content will be added later */}
             </StyledHomeContainer>
         </>
