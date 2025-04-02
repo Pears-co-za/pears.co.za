@@ -14,6 +14,7 @@ function Home() {
             />
             
             <StyledHomeContainer>
+                Other stuffs
                 {/* Rest of the content will be added later */}
             </StyledHomeContainer>
         </>
