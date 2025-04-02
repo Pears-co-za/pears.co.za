@@ -16,8 +16,7 @@ function Home() {
             <div>
                 <FadeIn>
                     <StyledDisplayHeading>
-                        Inspired by nature, driven by technology, perfected in
-                        partnership.{" "}
+                        Heeloooooo.{" "}
                         <StyledHightlightText>
                             Welcome to Pears.
                         </StyledHightlightText>
