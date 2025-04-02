@@ -13,7 +13,7 @@ import {
     StyledFooterBottomText,
 } from "../../styles/Footer.styles";
 
-import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
 function Footer() {
     return (
