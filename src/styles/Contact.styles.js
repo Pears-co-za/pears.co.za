@@ -46,7 +46,9 @@ export const RightPanel = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     flex: 1;
-
+    background-color:rgb(255, 255, 255);
+    padding: 58px 32px;
+border-radius: 8px;
     @media only screen and (max-width: 800px) {
         width: 100%;
         margin: 0;

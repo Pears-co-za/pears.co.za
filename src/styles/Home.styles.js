@@ -126,9 +126,9 @@ export const StyledCTAWrapper = styled.div`
 export const StyledHomeContactSection = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 5rem 0;
-    max-width: 1280px;
+    padding: 5rem 4rem;
     margin: 0 auto;
+    background-color: #f9faf8;
     
     @media (max-width: 1280px) {
         padding: 5rem 2rem;
