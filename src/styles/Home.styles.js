@@ -126,6 +126,8 @@ export const StyledCTAWrapper = styled.div`
 export const StyledHomeContactSection = styled.section`
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    
     padding: 5rem 4rem;
     margin: 0 auto;
     background-color: #f9faf8;
