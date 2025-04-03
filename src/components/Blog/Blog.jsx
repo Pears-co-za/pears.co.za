@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import {
-    StyledBlogContainer,
-    StyledDisplayHeading,
-    StyledH1,
-    StyledHightlightText,
+    StyledBlogContainer
 } from "./Blog.styled";
 import FadeIn from "../common/FadeIn";
 import styles from './Blog.module.css';
@@ -19,7 +16,7 @@ const Blog = ({ blogs }) => {
                             <img
                                 src="./assets/Ellipse_2.png"
                                 className=""
-                                alt=""
+                                alt="user"
                             />
                         </div>
                         <div>
@@ -41,7 +38,7 @@ const Blog = ({ blogs }) => {
                                     <img
                                         src={blog.image}
                                         className={styles.card__image}
-                                        alt="card image"
+                                        alt="card"
                                     />
                                 </div>
                                 <div className={styles.card__text}>

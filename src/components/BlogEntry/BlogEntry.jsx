@@ -28,7 +28,7 @@ const BlogEntry = ({ blogs }) => {
                                     <img
                                         src={blog.image}
                                         className={styles.card__image}
-                                        alt="card image"
+                                        alt="user"
                                     />
                                 </div>
                                 <div className={styles.card__text}>
