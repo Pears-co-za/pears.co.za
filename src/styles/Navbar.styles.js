@@ -7,7 +7,7 @@ export const StyledNavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${colors.black};
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,8 +21,8 @@ export const StyledLogo = styled(Link)`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.5rem;
-  color: ${colors.black};
+  font-size: 1.25rem;
+  color: ${colors.white};
   text-decoration: none;
   font-weight: 500;
 
@@ -86,7 +86,7 @@ export const StyledNavLinks = styled.div`
         position: fixed;
         flex-direction: column;
         align-items: center;
-        background-color:rgb(63, 63, 63);
+        background-color: rgb(63, 63, 63);
         top: 0;
         right: ${({ $isOpen }) => ($isOpen ? '0' : '-100%')};
         height: 100vh;
@@ -101,10 +101,11 @@ export const StyledNavLinks = styled.div`
 export const StyledNavLink = styled(Link)`
     color: ${colors.white};
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.875rem;
     position: relative;
     padding-bottom: 2px; // Add padding for the underline
-/* margin-right: 2rem; */
+    font-weight: 400;
+    
     &:after {
         content: '';
         position: absolute;

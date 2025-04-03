@@ -1,52 +1,111 @@
-import { ButtonCTA } from "../common/ButtonCTA";
-import Accordion from "../common/Accordion";
-import FadeIn from "../common/FadeIn";
+import React from "react";
+import Hero from "../layout/Hero";
+import ButtonWithBee from "../common/ButtonWithBee";
 import {
-    StyledHightlightText,
-    StyledDisplayHeading,
     StyledHomeContainer,
-    Styled3ColSection,
-    StyledH1,
-    StyledServicesSection,
+    StyledWhyChooseUsSection,
+    StyledSectionTitle,
+    StyledFeaturesGrid,
+    StyledFeatureCard,
+    StyledFeatureImage,
+    StyledFeatureTitle,
+    StyledFeatureDescription,
+    StyledCollaborationSection,
+    StyledCollaborationTitle,
+    StyledCollaborationText,
+    StyledCTAWrapper,
 } from "../../styles/Home.styles";
 
 function Home() {
     return (
-        <StyledHomeContainer>
-            <div>
-                <FadeIn>
-                    <StyledDisplayHeading>
-                        Inspired by nature, driven by technology, perfected in
-                        partnership.{" "}
-                        <StyledHightlightText>
-                            Welcome to Pears.
-                        </StyledHightlightText>
-                    </StyledDisplayHeading>
-                </FadeIn>
+        <>
+            <Hero
+                backgroundImage="/assets/home-hero-bg.png"
+                title="Inspired by nature, driven by technology, perfected in partnership. Welcome to Pears."
+                buttonText="Learn About Us"
+                buttonLink="/about"
+                fullHeight={true}
+            />
+            <StyledWhyChooseUsSection>
+                <StyledSectionTitle>Why Choose Us</StyledSectionTitle>
 
-                <FadeIn delay={200}>
-                    <Styled3ColSection>
-                        <p>Our Story</p>
-                        <StyledH1>
-                            We're a team of IT specialists inspired by nature's
-                            harmony.
-                            <StyledHightlightText>
-                                {" "}
-                                Let us help you reach new heights.
-                            </StyledHightlightText>
-                        </StyledH1>
-                        <ButtonCTA to="/about">About Us</ButtonCTA>
-                    </Styled3ColSection>
-                </FadeIn>
+                <StyledFeaturesGrid>
+                    <StyledFeatureCard>
+                        <StyledFeatureImage
+                            src="/assets/dynamic-it-partnerships.png"
+                            alt="Dynamic IT Partnerships"
+                        />
+                        <StyledFeatureTitle>
+                            Dynamic IT Partnerships
+                        </StyledFeatureTitle>
+                        <StyledFeatureDescription>
+                            Our collaborative methodologies ensure that
+                            technology becomes a seamless extension of your
+                            business, driving efficiency and sparking
+                            innovation.
+                        </StyledFeatureDescription>
+                    </StyledFeatureCard>
 
-                <FadeIn delay={400}>
-                    <StyledServicesSection>
-                        <p>Services</p>
-                        <Accordion />
-                    </StyledServicesSection>
-                </FadeIn>
-            </div>
-        </StyledHomeContainer>
+                    <StyledFeatureCard>
+                        <StyledFeatureImage
+                            src="/assets/tailored-solutions.png"
+                            alt="Tailored Solutions for Growth"
+                        />
+                        <StyledFeatureTitle>
+                            Tailored Solutions for Growth
+                        </StyledFeatureTitle>
+                        <StyledFeatureDescription>
+                            Our custom IT solutions are designed to meet the
+                            unique needs of your business, ensuring that you
+                            stay ahead in a rapidly evolving landscape.
+                        </StyledFeatureDescription>
+                    </StyledFeatureCard>
+
+                    <StyledFeatureCard>
+                        <StyledFeatureImage
+                            src="/assets/strategies-for-transformation.png"
+                            alt="Strategies for Transformation"
+                        />
+                        <StyledFeatureTitle>
+                            Strategies for Transformation
+                        </StyledFeatureTitle>
+                        <StyledFeatureDescription>
+                            We leverage advanced technology and collaborative
+                            strategies to transform how businesses operate,
+                            placing you on the path to success.
+                        </StyledFeatureDescription>
+                    </StyledFeatureCard>
+                </StyledFeaturesGrid>
+            </StyledWhyChooseUsSection>
+
+            <StyledCollaborationSection>
+                <StyledCollaborationTitle>
+                    Harness the Power of Collaboration
+                </StyledCollaborationTitle>
+                <StyledCollaborationText>
+                    Experience a transformation in your operations as we
+                    implement tailored IT solutions designed specifically for
+                    your unique challenges. Our approach is inspired by the
+                    natural synergy of bees, cultivating a vibrant ecosystem
+                    that supports your business in achieving its full potential.
+                </StyledCollaborationText>
+                <StyledCollaborationText>
+                    Join us in redefining what's possible. Embrace a partnership
+                    that values your vision and propels your growth. Let us help
+                    you articulate your narrative, engage your target audience
+                    effectively, and elevate your brand to new heights of
+                    success.
+                </StyledCollaborationText>
+                <StyledCTAWrapper>
+                <ButtonWithBee to="/contact">Connect With Us</ButtonWithBee>
+
+                </StyledCTAWrapper>
+            </StyledCollaborationSection>
+            <StyledHomeContainer>
+                Other stuffs soon come...
+                {/* Rest of the content will be added later */}
+            </StyledHomeContainer>
+        </>
     );
 }
 
