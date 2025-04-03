@@ -1,9 +1,6 @@
 import React from "react";
 import {
     StyledBlogContainer,
-    StyledDisplayHeading,
-    StyledH1,
-    StyledHightlightText,
 } from "../../styles/Blog.styles";
 import FadeIn from "../common/FadeIn";
 
