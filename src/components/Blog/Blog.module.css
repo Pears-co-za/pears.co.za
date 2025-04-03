@@ -10,16 +10,14 @@
     max-width: 450px;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 2rem .5rem 2rem;
 }
 
 .intro img {
-    width: 200px; /* Set equal width and height */
+    width: 200px;
     height: auto;
-    /* border-radius: 50%; */
     object-fit: contain;
     margin-bottom: 0rem;  
-    /* padding: 3rem; */
     padding: 1rem;
 }
 
@@ -76,15 +74,10 @@
     font-size: 20px;
 }
 
-/* h2 {
-    font-size: 20px;
-} */
-
 @media (min-width: 700px) {
     .center__content {
         display: flex;
         justify-content: center;
-        /* border: 2px solid red; */
     }
     .cards {
         flex-direction: row;
@@ -97,7 +90,6 @@
     }
 
     .intro {
-        /* padding: .8rem;; */
         padding-bottom: 1rem;
     }
 
@@ -109,12 +101,14 @@
     
 }
 
-@media (min-width: 1000px) {
-    .intro {
-       
-        /* padding-top: 2rem; */
+@media (min-width: 700px) and (max-width: 1000px){
+    .cards {
+        max-width: 710px;
     }
+   
+}
 
+@media (min-width: 1000px) {
     .cards {
         margin-top: 2rem;
         justify-content: flex-start;
