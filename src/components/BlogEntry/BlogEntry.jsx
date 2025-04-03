@@ -17,7 +17,7 @@ const BlogEntry = ({ blogs }) => {
         <StyledBlogContainer>
             <FadeIn delay={200}>
                 <div className="{styles.previous__page}">
-                    <Link to={`/blog`}>Read Post</Link>
+                    <Link to={`/blog`}>Back To Previous Page</Link>
                 </div>
 
                 <div className={styles.center__content}>
