@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { colors } from "../../constants";
 
-export const StyledBlogContainer = styled.div`
+export const StyledBlogEntryContainer = styled.div`
     width: min(90%, 1300px);
     margin: 0 auto;
+    margin-top: 5rem;
 
     @media (min-width: 1000px) {
         display:flex;

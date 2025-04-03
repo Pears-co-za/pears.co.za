@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import {
-    StyledBlogContainer,
+    StyledBlogEntryContainer,
 } from "./BlogEntry.styled";
 import FadeIn from "../common/FadeIn";
 import styles from './BlogEntry.module.css';
@@ -14,7 +14,7 @@ const BlogEntry = ({ blogs }) => {
     console.log(blog.image);
 
     return (
-        <StyledBlogContainer>
+        <StyledBlogEntryContainer>
             <FadeIn delay={200}>
                 <div className="{styles.previous__page}">
                     <Link to={`/blog`}>Back To Previous Page</Link>
@@ -42,7 +42,7 @@ const BlogEntry = ({ blogs }) => {
                     </div>
                 </div>
             </FadeIn>
-        </StyledBlogContainer >
+        </StyledBlogEntryContainer >
     );
 };
 

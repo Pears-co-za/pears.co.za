@@ -14,7 +14,7 @@
 }
 
 .intro img {
-    width: 210px; /* Set equal width and height */
+    width: 200px; /* Set equal width and height */
     height: auto;
     /* border-radius: 50%; */
     object-fit: contain;
@@ -93,9 +93,7 @@
     }
 
     .intro img {
-        /* width: 200px;
-        height: 200px; */
-        padding: .3rem;
+        width: 210px;
     }
 
     .intro {
