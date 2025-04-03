@@ -22,7 +22,7 @@ export const StyledHightlightText = styled.span`
 /* Why Choose Us Section Styles */
 export const StyledWhyChooseUsSection = styled.section`
     padding: 4rem 0;
-    background-color: #f9f9f9;
+    background-color: #f9f9f8;
     text-align: center;
 `;
 
@@ -119,6 +119,23 @@ export const StyledCTAWrapper = styled.div`
             background-color: ${colors.paleYellow};
             color: ${colors.black};
         }
+    }
+`;
+
+/* Home Contact Section */
+export const StyledHomeContactSection = styled.section`
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    @media (max-width: 1280px) {
+        padding: 5rem 2rem;
+    }
+    
+    @media (max-width: 768px) {
+        padding: 3rem 2rem;
     }
 `;
 

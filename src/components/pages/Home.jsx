@@ -1,7 +1,8 @@
 import React from "react";
 import Hero from "../layout/Hero";
 import ButtonWithBee from "../common/ButtonWithBee";
-import Contact from "./Contact";
+import ContactSection from "../common/ContactSection";
+import FadeIn from "../common/FadeIn";
 import {
     StyledHomeContainer,
     StyledWhyChooseUsSection,
@@ -15,6 +16,7 @@ import {
     StyledCollaborationTitle,
     StyledCollaborationText,
     StyledCTAWrapper,
+    StyledHomeContactSection,
 } from "../../styles/Home.styles";
 
 function Home() {
@@ -98,14 +100,17 @@ function Home() {
                     success.
                 </StyledCollaborationText>
                 <StyledCTAWrapper>
-                <ButtonWithBee to="/contact">Connect With Us</ButtonWithBee>
-
+                    <ButtonWithBee to="/contact">Connect With Us</ButtonWithBee>
                 </StyledCTAWrapper>
             </StyledCollaborationSection>
-            <StyledHomeContainer>
-                Other stuffs soon come...
-                {/* Rest of the content will be added later */}
-            </StyledHomeContainer>
+
+            <StyledHomeContainer>Other content here</StyledHomeContainer>
+
+            <StyledHomeContactSection>
+                <FadeIn>
+                    <ContactSection variant="home" />
+                </FadeIn>
+            </StyledHomeContactSection>
         </>
     );
 }

@@ -3,7 +3,7 @@ import { colors } from "../constants";
 
 // Add background color to the entire page
 export const StyledContactPage = styled.div`
-    background-color: #F9FAF8;
+    background-color: #f9faf8;
     width: 100%;
 `;
 
@@ -12,7 +12,7 @@ export const StyledContactContainer = styled.div`
     margin-bottom: 2rem;
     max-width: 1280px;
     margin: 0 auto;
-    
+
     @media only screen and (min-width: 1540px) {
         padding: 2rem 8rem;
     }
@@ -35,7 +35,7 @@ export const LeftPanel = styled.div`
     flex: 1;
     justify-content: space-between;
     word-break: normal;
-    
+
     @media (max-width: 768px) {
         margin-bottom: 2rem;
     }
@@ -62,7 +62,7 @@ export const StyledH1 = styled.h1`
     @media only screen and (max-width: 768px) {
         font-size: 2.5rem;
     }
-    
+
     @media only screen and (max-width: 500px) {
         font-size: 2.2rem;
     }
@@ -84,7 +84,7 @@ export const StyledContactSection = styled.div`
     justify-content: space-between;
     gap: 4rem;
     margin-top: 3rem;
-    
+
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 2rem;
@@ -95,11 +95,11 @@ export const StyledContactImagesContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    
+
     @media (max-width: 992px) {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     @media (max-width: 500px) {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -113,20 +113,20 @@ export const StyledContactImage = styled.img`
     padding: 2rem;
     border-radius: 8px;
     object-fit: contain;
-    
+
     @media (max-width: 768px) {
         padding: 1.5rem;
     }
-    
+
     // Only show first image on mobile
-    &:nth-child(n+2) {
+    &:nth-child(n + 2) {
         @media (max-width: 500px) {
             display: none;
         }
     }
-    
+
     // Only show first two images on tablet
-    &:nth-child(n+3) {
+    &:nth-child(n + 3) {
         @media (max-width: 992px) and (min-width: 501px) {
             display: none;
         }
@@ -155,15 +155,15 @@ export const StyledSocialIcon = styled.a`
     color: white;
     font-size: 1.5rem;
     transition: all 0.3s ease;
-    
+
     // Specific colors for each icon type
-    background-color: ${props => {
+    background-color: ${(props) => {
         if (props.children.type === "FaWhatsapp") return "#25D366"; // WhatsApp green
         if (props.children.type === "FaLinkedin") return "#0077B5"; // LinkedIn blue
-        if (props.children.type === "FaPhone") return "#FFC107";    // Phone yellow
+        if (props.children.type === "FaPhone") return "#FFC107"; // Phone yellow
         return "#759066"; // Default green if no match
     }};
-    
+
     &:hover {
         transform: translateY(-3px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -197,7 +197,7 @@ export const StyledInput = styled.input`
     border-radius: 4px;
     font-size: 1rem;
     transition: border-color 0.3s;
-    
+
     &:focus {
         outline: none;
         border-color: #759066;
@@ -212,7 +212,7 @@ export const StyledTextarea = styled.textarea`
     resize: vertical;
     min-height: 120px;
     transition: border-color 0.3s;
-    
+
     &:focus {
         outline: none;
         border-color: #759066;
@@ -236,18 +236,18 @@ export const StyledSubmitButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     img {
         width: 18px;
         height: 18px;
         margin-left: 0.5rem;
         transition: transform 0.3s ease;
     }
-    
+
     &:hover {
         background-color: ${colors.paleYellow || "#F8E16D"};
         color: #000;
-        
+
         img {
             transform: translateY(-3px);
         }
