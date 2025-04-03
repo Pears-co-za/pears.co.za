@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { colors } from "../constants";
 
 export const StyledHeroSection = styled.div`
-    height: ${props => props.$fullHeight ? '100vh' : '60vh'};
+    height: ${props => props.$fullHeight ? '100vh' : '50vh'};
     width: 100%;
     position: relative;
     background-image: ${props => `url('${props.$backgroundImage}')`};
@@ -39,17 +40,17 @@ export const StyledHeroContent = styled.div`
 `;
 
 export const StyledHeroText = styled.div`
-    max-width: 970px;
-    text-align: ${props => props.$textAlign || 'center'};
+    max-width: 750px;
+    text-align: ${props => props.$textAlign || 'left'};
     margin: ${props => props.$textAlign === 'center' ? '0 auto' : '0'};
 `;
 
 export const StyledHeroHeading = styled.h1`
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.2;
     color: ${colors.white};
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     
     @media (max-width: 768px) {
         font-size: 2.5rem;
@@ -57,5 +58,32 @@ export const StyledHeroHeading = styled.h1`
 
     @media (max-width: 480px) {
         font-size: 2rem;
+    }
+`;
+
+export const StyledHeroSubtitle = styled.h2`
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: ${colors.white};
+    margin-bottom: 2rem;
+    
+    @media (max-width: 768px) {
+        font-size: 1.125rem;
+    }
+`;
+
+export const StyledHeroButton = styled(Link)`
+    background-color: ${colors.white};
+    color: ${colors.black};
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: ${colors.paleYellow};
     }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../layout/Hero";
 import ButtonWithBee from "../common/ButtonWithBee";
+import Contact from "./Contact";
 import {
     StyledHomeContainer,
     StyledWhyChooseUsSection,

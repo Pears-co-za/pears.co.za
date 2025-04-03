@@ -1,20 +1,23 @@
 import React from "react";
-import { ButtonCTA } from "../common/ButtonCTA"; // Import your custom button
+import { Link } from "react-router-dom";
 import {
     StyledHeroSection,
     StyledHeroContent,
     StyledHeroText,
     StyledHeroHeading,
+    StyledHeroSubtitle,
+    StyledHeroButton,
     StyledBackgroundOverlay
 } from "../../styles/Hero.styles";
 
 const Hero = ({ 
     backgroundImage, 
     title, 
+    subtitle,
     buttonText, 
     buttonLink, 
     overlayOpacity = 0.5,
-    textAlign = "center",
+    textAlign = "left",
     fullHeight = true
 }) => {
     return (
@@ -28,10 +31,15 @@ const Hero = ({
                     <StyledHeroHeading>
                         {title}
                     </StyledHeroHeading>
+                    {subtitle && (
+                        <StyledHeroSubtitle>
+                            {subtitle}
+                        </StyledHeroSubtitle>
+                    )}
                     {buttonText && buttonLink && (
-                        <ButtonCTA to={buttonLink}>
+                        <StyledHeroButton to={buttonLink}>
                             {buttonText}
-                        </ButtonCTA>
+                        </StyledHeroButton>
                     )}
                 </StyledHeroText>
             </StyledHeroContent>
