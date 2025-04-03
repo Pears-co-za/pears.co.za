@@ -1,0 +1,133 @@
+.blogWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.intro img {
+    width: 210px; /* Set equal width and height */
+    height: auto;
+    /* border-radius: 50%; */
+    object-fit: contain;
+    margin-bottom: 0rem;  
+    /* padding: 3rem; */
+    padding: 1rem;
+}
+
+.intro > div:last-child > * {
+    padding-bottom: .8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 1rem;
+}
+
+.card__link {
+    margin-left: auto;
+    padding: 8px 1rem;
+    border-radius: 1rem;
+    background-color: #759066;
+    color: white;
+}
+
+.card__link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card a:hover {
+    opacity: .6;
+}
+
+.card div:nth-child(2) {
+    text-align: left;
+}
+
+
+.card__text {
+    padding: 1rem 0;
+}
+
+.card__h2 {
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+/* h2 {
+    font-size: 20px;
+} */
+
+@media (min-width: 700px) {
+    .center__content {
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid red; */
+    }
+    .cards {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .intro img {
+        /* width: 200px;
+        height: 200px; */
+        padding: .3rem;
+    }
+
+    .intro {
+        /* padding: .8rem;; */
+        padding-bottom: 1rem;
+    }
+
+    .card {
+        max-width: 300px;
+        padding: 2rem 0;
+    }
+
+    
+}
+
+@media (min-width: 1000px) {
+    .intro {
+       
+        /* padding-top: 2rem; */
+    }
+
+    .cards {
+        margin-top: 2rem;
+        justify-content: flex-start;
+    }
+
+    .card {
+        max-width: 300px;
+        padding: .8rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        border-radius: 1rem;
+        background-color: #fdfafa;
+    }
+}
