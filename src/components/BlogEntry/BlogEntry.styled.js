@@ -9,7 +9,6 @@ export const StyledBlogEntryContainer = styled.div`
     @media (min-width: 1000px) {
         display:flex;
     }
-}
 `;
 
 export const StyledDisplayHeading = styled.div`
