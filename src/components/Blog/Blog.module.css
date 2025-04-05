@@ -41,8 +41,8 @@
 
 .card img {
     border-radius: 1rem;
-    height: 180px;
-    width: auto;
+    height: 190px;
+    width: 300px;
     object-fit: fill;
 }
 
@@ -57,10 +57,12 @@
 .card__link a {
     text-decoration: none;
     color: #fff;
+    
+    font-size: .8rem;
 }
 
 .card a:hover {
-    opacity: .6;
+    opacity: .8;
 }
 
 .card div:nth-child(2) {
@@ -106,9 +108,7 @@
     .card {
         max-width: 300px;
         padding: 2rem 0;
-    }
-
-    
+    }   
 }
 
 @media (min-width: 700px) and (max-width: 1000px){

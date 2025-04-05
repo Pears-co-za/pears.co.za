@@ -36,7 +36,7 @@ const BlogEntry = ({ users }) => {
                                     <div className={styles.card} key={post.id}>
                                         <div className={styles.card__image} >
                                             <img
-                                                src={post.image}
+                                                src="/assets/Rectangle-57.png"
                                                 alt="user"
                                             />
                                         </div>

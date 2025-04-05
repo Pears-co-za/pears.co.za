@@ -1,5 +1,4 @@
 .blogEntry__container {
-
     background-color: #fdfafa;
     padding: .6rem;
     border-radius: 1rem;
@@ -7,12 +6,24 @@
 
 .previous__page {
     text-align: center;
-    margin-bottom: 1rem;
-    border: 1px solid blue;
+    margin-bottom: 1.5rem;
+}
+
+.previous__page a {
+    text-decoration: none;
+    padding: 8px 1rem;
+    border-radius: 1rem;
+    background-color: #759066;
+    color: white;
+    font-size: .8rem;
+}
+
+.previous__page a:hover {
+    opacity: .8;
 }
 
 .card__profile {
-    width: 40px;
+    width: 60px;
     height: auto;
 }
 
@@ -26,6 +37,7 @@
 
 .user__name {
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .card__h2 {
@@ -55,6 +67,13 @@ h1 {
     font-weight: 400;
 }
 
+.card__image img {
+    border-radius: .6rem;
+    object-fit:cover;
+    height: 260px;
+    width: 100%;
+}
+
 @media (min-width:360px) {
     .blogEntry__wrapper {
         padding-left: clamp(1rem, 2vw, 3rem);
@@ -75,7 +94,13 @@ h1 {
 
     .blogEntry__wrapper {
         padding: 0 5rem;
-    }  
+    } 
+    
+    .card__image img {
+        object-fit:cover; 
+        height: 350px;
+        width: 350px;;
+    }
 }
 
 @media (min-width:1000px) {
@@ -108,5 +133,11 @@ h1 {
 
     .card__image {
         align-self: center;
+    }
+
+    .card__image img {
+        object-fit:cover;
+        height: 500px;
+        width: 1700px;
     }
 }
