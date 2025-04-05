@@ -30,17 +30,6 @@ function App() {
                 { id: 3, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
             ]
         },
-        {
-            userId: 2,
-            firstName: 'Drake',
-            lastName: 'Smith',
-            profilePicture: "/assets/Ellipse_2.png",
-            posts: [
-                { id: 1, title: "Lorem ipsum dolor sit amet consectetur 1", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
-                { id: 2, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
-                { id: 3, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
-            ]
-        },
     ];
 
     return (

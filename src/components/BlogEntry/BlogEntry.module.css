@@ -2,16 +2,7 @@
     background-color: aqua;
     padding: .6rem;
     border-radius: 1rem;
-    /* margin-bottom: 1rem; */
-
 }
-
-/* .blogEntry__wrapper {
-    padding-left: clamp(.6rem, .6rem, 6rem);
-    padding-right: clamp(.6rem, .6rem, 6rem);
-} */
-
-
 
 .previous__page {
     text-align: center;
@@ -25,9 +16,6 @@
 }
 
 .user__info {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     margin: 1.5rem 0;
 }
 
@@ -116,6 +104,4 @@ h1 {
     .card__image {
         align-self: center;
     }
-    
-    
 }
