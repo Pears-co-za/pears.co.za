@@ -6,6 +6,7 @@ import {
 } from "./BlogEntry.styled";
 import FadeIn from "../common/FadeIn";
 import styles from './BlogEntry.module.css';
+import parse from 'html-react-parser';
 
 const BlogEntry = ({ users }) => {
     const { userId, id } = useParams();
@@ -57,9 +58,9 @@ const BlogEntry = ({ users }) => {
                                                 </div>
                                             </div>
                                             <h2 className={styles.card__h2}>{post.title}</h2>
-                                            <p className={styles.card__p}>
-                                                {post.content}
-                                            </p>
+                                            <div className={styles.card__p}>
+                                                {parse(post.content)}
+                                            </div>
                                         </div>
                                     </div>
                                 ) : (

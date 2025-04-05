@@ -1,5 +1,6 @@
 .blogEntry__container {
-    background-color: aqua;
+
+    background-color: #fdfafa;
     padding: .6rem;
     border-radius: 1rem;
 }
@@ -27,13 +28,17 @@
     font-weight: bold;
 }
 
-h2 {
+.card__h2 {
     font-size: 18px;
     margin-bottom: .6rem;
 }
 
 p {
     font-size: 14px;
+}
+
+span {
+    font-weight: 700;
 }
 
 .card__p {
