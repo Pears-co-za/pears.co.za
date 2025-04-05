@@ -41,6 +41,9 @@
 
 .card img {
     border-radius: 1rem;
+    height: 180px;
+    width: auto;
+    object-fit: fill;
 }
 
 .card__link {
@@ -72,6 +75,13 @@
 .card__h2 {
     padding-bottom: 1rem;
     font-size: 20px;
+}
+
+.card__p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 @media (min-width: 700px) {
