@@ -11,10 +11,36 @@ import PageNotFound from './components/pages/PageNotFound';
 
 
 function App() {
-    const blogs = [
-        { id: 1, title: "Lorem ipsum dolor sit amet consectetur 1", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in." },
-        { id: 2, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in." },
-        { id: 3, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in." },
+    const users = [
+        {
+            userId: 1,
+            firstName: 'Jakoby',
+            lastName: 'Smith',
+            profilePicture: "/assets/Ellipse_2.png",
+            posts: [
+                {
+                    id: 1,
+                    title: "Lorem ipsum dolor sit amet consectetur 1",
+                    image: "/assets/image-02.jpg",
+                    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in",
+                    uploadDate: "14 February 2025",
+                    timeToRead: "5 min",
+                },
+                { id: 2, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
+                { id: 3, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
+            ]
+        },
+        {
+            userId: 2,
+            firstName: 'Drake',
+            lastName: 'Smith',
+            profilePicture: "/assets/Ellipse_2.png",
+            posts: [
+                { id: 1, title: "Lorem ipsum dolor sit amet consectetur 1", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
+                { id: 2, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
+                { id: 3, title: "Lorem ipsum dolor sit amet consectetur 2", image: "/assets/image-02.jpg", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.", uploadDate: "14 February 2025", timeToRead: "5 min", },
+            ]
+        },
     ];
 
     return (
@@ -23,8 +49,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/blog" element={<Blog blogs={blogs} />} />
-                <Route path="/blogs/:id" element={<BlogEntry blogs={blogs} />} />
+                <Route path="/blog" element={<Blog users={users} />} />
+                <Route path="/blogs/:userId/:id" element={<BlogEntry users={users} />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<PageNotFound />} /> {/* Catch-all route */}
             </Routes>
