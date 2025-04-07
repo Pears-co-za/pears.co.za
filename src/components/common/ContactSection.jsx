@@ -20,6 +20,33 @@ import {
     StyledFormGroup
 } from "../../styles/Contact.styles";
 
+const IllustrationContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+`;
+
+const MobileIllustration = styled.div`
+    display: none;
+    
+    @media (max-width: 992px) {
+        display: block;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        
+        img {
+            max-width: 250px;
+            height: auto;
+        }
+    }
+`;
+
 const WhatsAppIcon = styled.a`
     display: flex;
     align-items: center;
@@ -163,6 +190,33 @@ function ContactSection({
                                 <FaPhone />
                             </PhoneIcon>
                         </StyledSocialIcons>
+
+                        {/* Desktop Illustrations */}
+                        <IllustrationContainer>
+                            <img 
+                                src="/assets/form-img-1.png" 
+                                alt="Illustration 1" 
+                                style={{ width: '30%', height: 'auto' }} 
+                            />
+                            <img 
+                                src="/assets/form-img-2.png" 
+                                alt="Illustration 2" 
+                                style={{ width: '30%', height: 'auto' }} 
+                            />
+                            <img 
+                                src="/assets/form-img-3.png" 
+                                alt="Illustration 3" 
+                                style={{ width: '30%', height: 'auto' }} 
+                            />
+                        </IllustrationContainer>
+
+                        {/* Mobile Illustration */}
+                        <MobileIllustration>
+                            <img 
+                                src="/assets/form-img-mobile.png" 
+                                alt="Illustration" 
+                            />
+                        </MobileIllustration>
                     </StyledContactIntro>
                 </LeftPanel>
             </FadeIn>
