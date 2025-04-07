@@ -5,6 +5,7 @@ import Footer from "./components/layout/Footer";
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
+import ServicesPage from "./components/pages/servicesPage/ServicesPage";
 import Blog from './components/Blog';
 import BlogEntry from './components/BlogEntry';
 import PageNotFound from './components/pages/PageNotFound';
@@ -37,6 +38,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/blog" element={<Blog users={users} />} />
+                <Route path="/services" element={<ServicesPage/>} />
                 <Route path="/blogs/:userId/:id" element={<BlogEntry users={users} />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<PageNotFound />} /> {/* Catch-all route */}
