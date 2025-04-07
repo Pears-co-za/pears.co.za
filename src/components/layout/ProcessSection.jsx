@@ -9,7 +9,7 @@ const ProcessSection = () => {
       <StyledProcessContent>
         <StyledProcessLabel>How We Do Things</StyledProcessLabel>
         <StyledProcessHeading>Our Process Explained</StyledProcessHeading>
-        <ButtonCTA to="/processes">See All Our Processes</ButtonCTA>
+        <ButtonCTA to="/services">See All Our Processes</ButtonCTA>
       </StyledProcessContent>
     </StyledProcessSection>
   );

@@ -61,7 +61,7 @@ function Footer() {
                 <StyledFooterSection>
                     <StyledFooterHeading>Team</StyledFooterHeading>
                     <StyledFooterLinks>
-                        <StyledFooterLink to="/faq">About Us</StyledFooterLink>
+                        <StyledFooterLink to="/about">About Us</StyledFooterLink>
                         <StyledFooterLink to="/contact">
                             Contact Us
                         </StyledFooterLink>
