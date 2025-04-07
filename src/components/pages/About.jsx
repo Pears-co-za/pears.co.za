@@ -1,211 +1,143 @@
-import { StyledHomeContainer } from "../../styles/Home.styles";
-import FadeIn from "../common/FadeIn";
-import {ButtonCTA} from "../common/ButtonCTA";
+// About.js
+import React from "react";
+import Hero from "../layout/Hero";
 import {
-  AboutStyledDisplayHeading,
-  StyledHightlightText,
-  StyledColSections,
-  StyledAboutH1,
-  StyledAboutH2,
-  StyledH1SpacingSection,
-  StyledAboutSubheading,
-  StyledAboutSideHeading,
-  StyledAboutParagraphBreak,
-  StyledAboutContent,
-  Styled3ColSection,
-  StyledOurWorkH1,
-  StyledHightlightH2Text
+    StyledAboutContainer,
+    StyledQuoteSection,
+    StyledQuote,
+    StyledQuoteAuthor,
+    StyledSectionContainer,
+    StyledSectionTitle,
+    StyledSectionContent,
+    StyledSectionText,
+    StyledValueItem,
 } from "../../styles/About.styles";
 
 function About() {
-  return (
-    <StyledHomeContainer>
-      <div>
-        <FadeIn>
-          <StyledAboutSideHeading>Our Hive</StyledAboutSideHeading>
-          <AboutStyledDisplayHeading>
-            We Are
-            <StyledHightlightText> Pears.</StyledHightlightText>
-          </AboutStyledDisplayHeading>
-        </FadeIn>
+    return (
+        <>
+            <Hero
+                backgroundImage="/assets/about-hero-bg.png"
+                title="ABOUT US"
+                overlayOpacity={0.3}
+                fullHeight={false}
+            />
 
-        <FadeIn delay={250}>
-          <StyledAboutH2>
-            Just as
-            <StyledHightlightH2Text> bees </StyledHightlightH2Text>
-            work together to create something meaningful, we bring a
-            collaborative approach to every project, leveraging our expertise to
-            help your business thrive in a digital world.
-          </StyledAboutH2>
-        </FadeIn>
+            <StyledAboutContainer>
+                <StyledSectionContainer className="section-container">
+                    <StyledSectionTitle id="our-story">
+                        • OUR STORY
+                    </StyledSectionTitle>
+                    <StyledSectionContent className="section-content">
+                        <StyledSectionText>
+                            At Pears, we empower businesses with cutting-edge
+                            technology solutions that drive innovation,
+                            efficiency, and growth. As a leading tech consulting
+                            firm, we specialize in strategy, digital
+                            transformation, and custom solutions tailored to
+                            your unique needs.
+                        </StyledSectionText>
 
-        <FadeIn delay={200}>
-          <StyledColSections>
-            <StyledAboutSideHeading>Our Mission</StyledAboutSideHeading>
-            <StyledAboutH1>
-              To create digital solutions that foster growth, efficiency, and
-              innovation. We believe in the power of partnerships, working
-              closely with clients to transform ideas into impactful outcomes.
-              <StyledAboutParagraphBreak>
-                Inspired by the ecosystem of a hive,
-                <StyledHightlightText>
-                  {" "}
-                  we aim to foster a community where business can flourish
-                  through technology.
-                </StyledHightlightText>
-              </StyledAboutParagraphBreak>
-            </StyledAboutH1>
-          </StyledColSections>
-        </FadeIn>
+                        <StyledSectionText>
+                            Our team of experts partners with organizations of
+                            all sizes to streamline operations, enhance user
+                            experiences, and future-proof their technology.
+                            Whether it's optimizing existing systems or building
+                            new digital solutions from the ground up, we bring
+                            deep industry knowledge, technical expertise, and a
+                            commitment to excellence.
+                        </StyledSectionText>
 
-        <FadeIn delay={200}>
-          <StyledColSections>
-            <StyledAboutSideHeading>Services</StyledAboutSideHeading>
-            <StyledAboutH1>
-              At Pears, we offer a comprehensive suite of IT services designed
-              to help
-              <StyledHightlightText>
-                {" "}
-                businesses leverage technology{" "}
-              </StyledHightlightText>
-              for growth and efficiency. With a team of specialists in key areas
-              of digital transformation, we ensure that each solution is crafted
-              to meet the unique needs of our clients.
-              <FadeIn >
-                <StyledH1SpacingSection>
-                  Here's how we can help:
-                </StyledH1SpacingSection>
-                <FadeIn delay={250}>
-                  <StyledAboutSubheading>
-                    IT Consultancy & Advisory
-                  </StyledAboutSubheading>
-                  <StyledAboutContent>
-                    Guiding your digital transformation, system improvements,
-                    and technology strategy to ensure sustained growth.
-                  </StyledAboutContent>
-                </FadeIn>
+                        <StyledSectionText>
+                            Let's build the future together—one breakthrough at
+                            a time.
+                        </StyledSectionText>
+                    </StyledSectionContent>
+                </StyledSectionContainer>
 
-                <FadeIn delay={250}>
-                  <StyledAboutSubheading>UX & UI Design</StyledAboutSubheading>
-                  <StyledAboutContent>
-                    Creating user-centered designs that enhance functionality
-                    and reflect your brand's identity.
-                  </StyledAboutContent>
-                </FadeIn>
+                <StyledSectionContainer className="section-container">
+                    <StyledSectionTitle id="our-vision">
+                        • OUR VISION 
+                    </StyledSectionTitle>
+                    <StyledSectionContent className="section-content">
+                        <StyledSectionText>
+                            Our vision is to redefine the future of technology
+                            by empowering businesses with innovative, scalable,
+                            and transformative solutions. We believe that
+                            technology should not only solve problems but also
+                            unlock new opportunities for growth, efficiency, and
+                            impact.
+                        </StyledSectionText>
 
-                <FadeIn delay={250}>
-                  <StyledAboutSubheading>
-                    Application Development
-                  </StyledAboutSubheading>
-                  <StyledAboutContent>
-                    Building customized web and mobile applications tailored to
-                    meet your business needs.
-                  </StyledAboutContent>
-                </FadeIn>
+                        <StyledSectionText>
+                            Our goal is to be a trusted partner in digital
+                            transformation, helping organizations navigate
+                            complexity, embrace emerging technologies, and stay
+                            ahead of the curve. Through collaboration,
+                            creativity, and cutting-edge expertise, we strive to
+                            shape a smarter, more connected world—one solution
+                            at a time.
+                        </StyledSectionText>
+                    </StyledSectionContent>
+                </StyledSectionContainer>
 
-                <FadeIn delay={250}>
-                  <StyledAboutSubheading>
-                    Project Management
-                  </StyledAboutSubheading>
-                  <StyledAboutContent>
-                    Ensuring projects are executed with efficiency,
-                    adaptability, and transparency for timely, successful
-                    delivery.
-                  </StyledAboutContent>
-                </FadeIn>
-              </FadeIn>
-            </StyledAboutH1>
-          </StyledColSections>
-        </FadeIn>
+                <StyledSectionContainer className="section-container">
+                    <StyledSectionTitle id="our-values">
+                        • OUR VALUES
+                    </StyledSectionTitle>
+                    <StyledSectionContent className="section-content">
+                        <StyledSectionText>
+                            Our values define who we are and how we operate.
+                            They guide our decisions, shape our culture, and
+                            drive us to deliver exceptional results for our
+                            clients.
+                        </StyledSectionText>
 
-        <FadeIn delay={200}>
-          <StyledColSections>
-            <StyledAboutSideHeading>How We Work</StyledAboutSideHeading>
-            <StyledAboutH1>
-              At
-              <StyledHightlightText> Pears </StyledHightlightText>
-              we believe that the best results come from working in harmony with
-              our clients. Our approach blends deep technical expertise with a
-              collaborative mindset, ensuring that each project is a true
-              <StyledHightlightText> partnership.</StyledHightlightText>
-              <FadeIn>
-              <FadeIn delay={200}>
-              <StyledAboutSubheading>
-                  01 Consultation & Discovery
-                </StyledAboutSubheading>
-                <StyledAboutContent>
-                  Every project starts with an in-depth consultation to
-                  understand your business needs, challenges, and goals. We take
-                  the time to learn about your vision, ensuring our approach
-                  aligns with your objectives from the outset.
-                </StyledAboutContent>
-              </FadeIn>
-              <FadeIn delay={200}>
-              <StyledAboutSubheading>
-                  02 Agile Development & Design
-                </StyledAboutSubheading>
-                <StyledAboutContent>
-                  We believe flexibility is essential in the digital world.
-                  Using agile methodology, we approach projects in stages,
-                  allowing for ongoing feedback, adaptations, and refinements.
-                </StyledAboutContent>
-              </FadeIn>
-              <FadeIn delay={200}>
-              <StyledAboutSubheading>
-                  03 Quality Assurance & Testing
-                </StyledAboutSubheading>
-                <StyledAboutContent>
-                  Every solution we create is rigorously tested to ensure it
-                  performs optimally and meets high standards of quality and
-                  security. Our QA team conducts thorough testing to identify
-                  and resolve any issues, delivering a polished product that's
-                  ready to launch.
-                </StyledAboutContent>
-              </FadeIn>
-              <FadeIn delay={200}>
-              <StyledAboutSubheading>
-                  04 Launch & Continuous Support
-                </StyledAboutSubheading>
-                <StyledAboutContent>
-                  After a successful launch, our partnership doesn't end. We
-                  provide continuous support, including maintenance, updates,
-                  and any future enhancements you may need. Our goal is to help
-                  your business grow by providing dependable, long-term IT
-                  solutions.
-                </StyledAboutContent>
-              </FadeIn>
+                        <StyledValueItem>
+                            <strong>Innovation</strong> – We embrace creativity
+                            and forward-thinking to develop cutting-edge
+                            solutions that solve real-world challenges.
+                        </StyledValueItem>
 
-              </FadeIn>
-            </StyledAboutH1>
-          </StyledColSections>
-        </FadeIn>
+                        <StyledValueItem>
+                            <strong>Collaboration</strong> – Success is built on
+                            teamwork. We work closely with our clients and
+                            partners to create meaningful and lasting impact.
+                        </StyledValueItem>
 
-        <FadeIn delay={200}>
-          <Styled3ColSection>
-            <StyledAboutSideHeading>Designing Success</StyledAboutSideHeading>
-            <StyledOurWorkH1>
-              Our projects are designed to build not only innovative solutions
-              but also lasting partnerships with our clients. Our team
-              approaches each project like crafting a digital ecosystem, where
-              every element works together seamlessly to achieve growth and
-              resilience. Explore our
-              <StyledHightlightText>
-                {" "}
-                past work to see how we bring these ideas to life and pollinate
-                digital success across industries.
-              </StyledHightlightText>
-            </StyledOurWorkH1>
-            <ButtonCTA to="/about">Our Work</ButtonCTA>
-          </Styled3ColSection>
-        </FadeIn>
+                        <StyledValueItem>
+                            <strong>Integrity</strong> – Transparency, honesty,
+                            and ethical practices are at the core of everything
+                            we do. We build trust through our actions.
+                        </StyledValueItem>
 
-        <FadeIn delay={200}>
+                        <StyledValueItem>
+                            <strong>Excellence</strong> – We are committed to
+                            delivering high-quality solutions that exceed
+                            expectations and drive measurable results.
+                        </StyledValueItem>
 
-          
-        </FadeIn>
-      </div>
-    </StyledHomeContainer>
-  );
+                        <StyledValueItem>
+                            <strong>Customer-Centric Approach</strong> – Our
+                            clients' success is our success. We prioritize their
+                            needs and tailor solutions to help them achieve
+                            their goals.
+                        </StyledValueItem>
+                    </StyledSectionContent>
+                </StyledSectionContainer>
+
+                <StyledQuoteSection>
+                    <StyledQuote>
+                        "The bee is more honored than other animals, not because
+                        she labors, but because she labors for others."
+                    </StyledQuote>
+                    <StyledQuoteAuthor>
+                        – Saint John Chrysostom
+                    </StyledQuoteAuthor>
+                </StyledQuoteSection>
+            </StyledAboutContainer>
+        </>
+    );
 }
 
 export default About;
