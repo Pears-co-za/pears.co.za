@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaWhatsapp, FaLinkedin, FaPhone } from "react-icons/fa";
 import FadeIn from "./FadeIn";
 import styled from "styled-components";
@@ -74,10 +74,78 @@ const PhoneIcon = styled.a`
     }
 `;
 
+const SuccessMessage = styled.div`
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+`;
+
 function ContactSection({ 
     variant = 'default',
     fadeInDelay = { left: 200, right: 300 }
 }) {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        whatsapp: '',
+        message: ''
+    });
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/bongiwe.sibanda@wearepears.co.za', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    ...formData,
+                    _subject: variant === 'home' 
+                        ? 'New contact form submission from homepage' 
+                        : 'New contact form submission'
+                })
+            });
+
+            if (response.ok) {
+                // Clear form and show success message
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    whatsapp: '',
+                    message: ''
+                });
+                setIsSubmitted(true);
+
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                    setIsSubmitted(false);
+                }, 3000);
+            } else {
+                // Handle error
+                console.error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+        }
+    };
+
     return (
         <StyledContactSection>
             <FadeIn delay={fadeInDelay.left}>
@@ -104,27 +172,15 @@ function ContactSection({
                     <StyledFormContainer>
                         <StyledH2>Send us a message, and we will get in touch</StyledH2>
                         
-                        <StyledForm 
-                            action="https://formsubmit.co/bongiwe.sibanda@wearepears.co.za" 
-                            method="POST"
-                        >
-                            {/* FormSubmit.co configuration */}
-                            <input type="hidden" name="_subject" value={
-                                variant === 'home' 
-                                    ? 'New contact form submission from homepage' 
-                                    : 'New contact form submission'
-                            } />
-                            <input type="hidden" name="_captcha" value="false" />
-                            <input type="hidden" name="_template" value="table" />
-                            <input type="text" name="_honey" style={{ display: 'none' }} />
-                            <input type="hidden" name="_next" value="https://wearepears.co.za/thank-you" />
-                            
+                        <StyledForm onSubmit={handleSubmit}>
                             <StyledFormGroup>
                                 <StyledLabel htmlFor="name">Your Name *</StyledLabel>
                                 <StyledInput 
                                     type="text" 
                                     name="name" 
                                     id="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     required 
                                 />
                             </StyledFormGroup>
@@ -135,6 +191,8 @@ function ContactSection({
                                     type="email" 
                                     name="email" 
                                     id="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     required 
                                 />
                             </StyledFormGroup>
@@ -145,6 +203,8 @@ function ContactSection({
                                     type="text" 
                                     name="subject" 
                                     id="subject"
+                                    value={formData.subject}
+                                    onChange={handleChange}
                                 />
                             </StyledFormGroup>
                             
@@ -154,6 +214,8 @@ function ContactSection({
                                     type="tel" 
                                     name="whatsapp" 
                                     id="whatsapp"
+                                    value={formData.whatsapp}
+                                    onChange={handleChange}
                                 />
                             </StyledFormGroup>
                             
@@ -163,6 +225,8 @@ function ContactSection({
                                     name="message" 
                                     id="message" 
                                     rows="4"
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     required
                                 ></StyledTextarea>
                             </StyledFormGroup>
@@ -170,6 +234,12 @@ function ContactSection({
                             <StyledSubmitButton type="submit">
                                 Submit Form <img src="/assets/bee-btn-icon.png" alt="Bee icon" />
                             </StyledSubmitButton>
+
+                            {isSubmitted && (
+                                <SuccessMessage>
+                                    Thank you! Your message has been submitted successfully.
+                                </SuccessMessage>
+                            )}
                         </StyledForm>
                     </StyledFormContainer>
                 </RightPanel>
