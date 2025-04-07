@@ -87,7 +87,7 @@
 
 .card__p {
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* Number of lines to display */
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

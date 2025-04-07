@@ -2,13 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../constants";
 
 export const StyledBlogEntryContainer = styled.div`
-    // width: min(90%, 1300px);
-    // margin: 0 auto;
-    // padding: 5rem 0 3rem 0;
 
-    // @media (min-width: 1000px) {
-    //     display:flex;
-    // }
 `;
 
 export const StyledDisplayHeading = styled.div`

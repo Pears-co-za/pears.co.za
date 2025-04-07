@@ -23,15 +23,11 @@
 }
 
 .card__profile {
-    width: 60px; /* Set equal width and height */
+    width: 60px;
     height: 60px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image fits within the circle */
+    border-radius: 50%;
+    object-fit: cover;
 }
-
-/* .card__profile img {
-    width: 100%;
-} */
 
 .user__info {
     margin: 1.5rem 0;
@@ -51,11 +47,11 @@
     margin-bottom: .6rem;
 }
 
-p {
+.blogEntry__container p {
     font-size: 14px;
 }
 
-span {
+.card__p span {
     font-weight: 700;
 }
 
@@ -69,7 +65,7 @@ span {
     text-align: center;
 }
 
-h1 {
+.quote h1 {
     font-weight: 400;
     font-style: italic;
 }
