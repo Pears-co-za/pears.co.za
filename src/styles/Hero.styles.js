@@ -71,19 +71,3 @@ export const StyledHeroSubtitle = styled.h2`
         font-size: 1.125rem;
     }
 `;
-
-export const StyledHeroButton = styled(Link)`
-    background-color: ${colors.white};
-    color: ${colors.black};
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    
-    &:hover {
-        background-color: ${colors.paleYellow};
-    }
-`;

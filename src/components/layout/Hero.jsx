@@ -1,45 +1,38 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { ButtonCTA } from "../common/ButtonCTA";
 import {
     StyledHeroSection,
     StyledHeroContent,
     StyledHeroText,
     StyledHeroHeading,
     StyledHeroSubtitle,
-    StyledHeroButton,
-    StyledBackgroundOverlay
+    StyledBackgroundOverlay,
 } from "../../styles/Hero.styles";
 
-const Hero = ({ 
-    backgroundImage, 
-    title, 
+const Hero = ({
+    backgroundImage,
+    title,
     subtitle,
-    buttonText, 
-    buttonLink, 
+    buttonText,
+    buttonLink,
     overlayOpacity = 0.5,
     textAlign = "left",
-    fullHeight = true
+    fullHeight = true,
 }) => {
     return (
-        <StyledHeroSection 
+        <StyledHeroSection
             $backgroundImage={backgroundImage}
             $fullHeight={fullHeight}
         >
             <StyledBackgroundOverlay $opacity={overlayOpacity} />
             <StyledHeroContent>
                 <StyledHeroText $textAlign={textAlign}>
-                    <StyledHeroHeading>
-                        {title}
-                    </StyledHeroHeading>
+                    <StyledHeroHeading>{title}</StyledHeroHeading>
                     {subtitle && (
-                        <StyledHeroSubtitle>
-                            {subtitle}
-                        </StyledHeroSubtitle>
+                        <StyledHeroSubtitle>{subtitle}</StyledHeroSubtitle>
                     )}
                     {buttonText && buttonLink && (
-                        <StyledHeroButton to={buttonLink}>
-                            {buttonText}
-                        </StyledHeroButton>
+                        <ButtonCTA to={buttonLink}>{buttonText}</ButtonCTA>
                     )}
                 </StyledHeroText>
             </StyledHeroContent>
