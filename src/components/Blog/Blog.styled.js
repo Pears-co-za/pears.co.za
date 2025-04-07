@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../constants";
 
 export const StyledBlogContainer = styled.div`
-    width: min(90%, 1300px);
-    margin: 2.6rem auto;
+   
 }
 `;
 

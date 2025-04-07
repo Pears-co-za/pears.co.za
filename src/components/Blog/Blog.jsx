@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "../layout/Hero";
 import { Link } from 'react-router-dom';
 import {
     StyledBlogContainer
@@ -7,10 +8,17 @@ import FadeIn from "../common/FadeIn";
 import styles from './Blog.module.css';
 
 const Blog = ({ users }) => {
-    console.log(users);
-
     return (
         <StyledBlogContainer>
+            <Hero
+                backgroundImage="/assets/blog-hero-bg.png"
+                title="THE BLOG"
+                subtitle="STAY INFORMED. GET INSPIRED. DISCOVER THE LATEST 
+                        IT INNOVATION AND TEAMWORK. WELCOME TO THE BUZZ
+                        FROM PEARS."
+                fullHeight={false}
+            />
+
             {users.map((user) => (
                 <div className={styles.user} key={user.userId}>
                     <FadeIn delay={200}>

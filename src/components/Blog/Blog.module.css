@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.user {
+    width: min(90%, 1300px);
+    margin: 2.6rem auto;
+}
+
 .intro {
     display: flex;
     flex-direction: column;

@@ -7,6 +7,7 @@ import {
 import FadeIn from "../common/FadeIn";
 import styles from './BlogEntry.module.css';
 import parse from 'html-react-parser';
+import Hero from "../layout/Hero";
 
 const BlogEntry = ({ users }) => {
     const { userId, id } = useParams();
@@ -24,6 +25,16 @@ const BlogEntry = ({ users }) => {
 
     return (
         <StyledBlogEntryContainer>
+            <Hero
+                backgroundImage="/assets/blog-hero-bg.png"
+                title="THE BLOG"
+                subtitle="STAY INFORMED. GET INSPIRED. DISCOVER THE LATEST 
+                        IT INNOVATION AND TEAMWORK. WELCOME TO THE BUZZ
+                        FROM PEARS."
+                fullHeight={false}
+            />
+
+
             <div className={styles.blogEntry__wrapper}>
                 <div className={styles.previous__page}>
                     <Link to={`/blog`}>Back To Previous Page</Link>
