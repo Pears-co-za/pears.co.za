@@ -22,24 +22,6 @@ const Blog = ({ users }) => {
             {users.map((user) => (
                 <div className={styles.user} key={user.userId}>
                     <FadeIn delay={200}>
-                        <div className={styles.blogWrapper}>
-                            <div className={styles.intro}>
-                                <div >
-                                    <img
-                                        src="./assets/Ellipse_2.png"
-                                        className=""
-                                        alt="user"
-                                    />
-                                </div>
-                                <div>
-                                    <h2>Beyond the Welcome Matt</h2>
-                                    <p>Please step inside</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe minus laboriosam cum modi ipsum expedita facere nam! Modi est consequuntur magni voluptates in.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </FadeIn>
-                    <FadeIn delay={200}>
                         <div className={styles.center__content}>
                             <div className={styles.cards}>
                                 {user.posts.map((post) => (

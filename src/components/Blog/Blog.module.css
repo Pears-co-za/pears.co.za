@@ -24,6 +24,7 @@
     object-fit: contain;
     margin-bottom: 0rem;  
     padding: 1rem;
+    border-radius: 50%;
 }
 
 .intro > div:last-child > * {

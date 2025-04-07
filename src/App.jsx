@@ -16,7 +16,7 @@ function App() {
             userId: 1,
             firstName: 'Bongiwe',
             lastName: 'Sibanda',
-            profilePicture: "/assets/Ellipse_2.png",
+            profilePicture: "/assets/b.jpeg",
             posts: [
                 {
                     id: 1,
