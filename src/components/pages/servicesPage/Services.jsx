@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
     ServicesContainer,
     ContentContainer,
@@ -133,7 +134,7 @@ const serviceContent = {
         ],
     },
     itAdvisoryCounsulting: {
-      // ID to link footer links
+        // ID to link footer links
         // id: "it-advisory",
         title: "IT Advisory & Consulting",
         description:
@@ -512,6 +513,7 @@ const serviceContent = {
 
 // Main Services component
 const Services = () => {
+    const location = useLocation();
     const [activeTab, setActiveTab] = useState("applicationDevelopment");
     const [isMobile, setIsMobile] = useState(false);
 
@@ -527,14 +529,33 @@ const Services = () => {
         return () => {
             window.removeEventListener("resize", checkIfMobile);
         };
-    }, []);
+
+    }, []); 
+
+    // Add this effect to check for URL hash changes
+useEffect(() => {
+    // Get tab from URL hash (without the # symbol)
+    const hash = location.hash.substring(1);
+    
+    // If a valid tab is specified in the hash, set it as active
+    if (hash && Object.keys(serviceContent).includes(hash)) {
+        setActiveTab(hash);
+    }
+}, [location.hash]); // This ensures the component updates when hash changes
+
+// Add this useEffect to scroll to top when activeTab changes
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeTab]);
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
+        window.history.replaceState(null, '', `/services#${tab}`);
     };
 
     const handleMobileSelectChange = (e) => {
         setActiveTab(e.target.value);
+        
     };
 
     // Render tabs for desktop or dropdown for mobile

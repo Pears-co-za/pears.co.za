@@ -43,16 +43,16 @@ function Footer() {
                 <StyledFooterSection>
                     <StyledFooterHeading>Services</StyledFooterHeading>
                     <StyledFooterLinks>
-                        <StyledFooterLink to="/services">
+                        <StyledFooterLink to="/services#itAdvisoryCounsulting">
                             IT Consulting and Advisory
                         </StyledFooterLink>
-                        <StyledFooterLink to="/services">
+                        <StyledFooterLink to="/services#uiUxDesign">
                             UX/UI Designs
                         </StyledFooterLink>
-                        <StyledFooterLink to="/services">
+                        <StyledFooterLink to="/services#applicationDevelopment">
                             Application Development
                         </StyledFooterLink>
-                        <StyledFooterLink to="/services">
+                        <StyledFooterLink to="/services#projectManagement">
                             Project Management
                         </StyledFooterLink>
                     </StyledFooterLinks>
