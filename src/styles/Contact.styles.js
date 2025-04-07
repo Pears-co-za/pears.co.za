@@ -83,7 +83,9 @@ export const StyledH2 = styled.h2`
 
 export const StyledContactSection = styled.div`
     display: flex;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
+    /* justify-content: space-between; */
     gap: 4rem;
     margin-top: 3rem;
 
