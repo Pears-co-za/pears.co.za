@@ -170,12 +170,12 @@ function ServicesTab() {
         { 
             text: "User Experience Testing", 
             category: 3, 
-            style: { position: "absolute", left: "8%", top: "320px" }
+            style: { position: "absolute", left: "28%", top: "320px" }
         },
         { 
             text: "User Interface and Prototyping", 
             category: 3, 
-            style: { position: "absolute", right: "8%", top: "320px" }
+            style: { position: "absolute", right: "18%", top: "320px" }
         },
         
         // Row 6
