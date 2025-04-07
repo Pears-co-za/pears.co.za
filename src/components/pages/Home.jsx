@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../layout/Hero";
 import ButtonWithBee from "../common/ButtonWithBee";
 import ContactSection from "../common/ContactSection";
+import ProcessSection from "../layout/ProcessSection";
 import FadeIn from "../common/FadeIn";
 import Accordion from "../common/Accordion";
 import ServicesTab from "../common/ServicesTab"; // Import the new ServicesTab component
@@ -126,7 +127,7 @@ function Home() {
                 <p>- Explore our insights</p>
                 <p>- Our Processes</p>
                 </StyledHomeContainer>
-
+                <ProcessSection />
             <StyledHomeContactSection>
                 <FadeIn>
                     <ContactSection variant="home" />
