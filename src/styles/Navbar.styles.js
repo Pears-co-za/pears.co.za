@@ -7,7 +7,7 @@ export const StyledNavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background: rgba(0, 0, 0, ${props => props.$opacity || 0.5});
   position: fixed;
   top: 0;
   left: 0;
