@@ -3,6 +3,8 @@ import Hero from "../layout/Hero";
 import ButtonWithBee from "../common/ButtonWithBee";
 import ContactSection from "../common/ContactSection";
 import FadeIn from "../common/FadeIn";
+import Accordion from "../common/Accordion";
+import ServicesTab from "../common/ServicesTab"; // Import the new ServicesTab component
 import {
     StyledHomeContainer,
     StyledWhyChooseUsSection,
@@ -17,7 +19,9 @@ import {
     StyledCollaborationText,
     StyledCTAWrapper,
     StyledHomeContactSection,
+    StyledServicesWrapper, // We'll create this styled component
 } from "../../styles/Home.styles";
+import { StyledH2 } from "../../styles/Contact.styles";
 
 function Home() {
     return (
@@ -103,6 +107,19 @@ function Home() {
                     <ButtonWithBee to="/contact">Connect With Us</ButtonWithBee>
                 </StyledCTAWrapper>
             </StyledCollaborationSection>
+
+            {/* Services Section with responsive display */}
+            <StyledServicesWrapper>
+                <div className="services-title">
+                    <StyledH2>Holistic, Integrated Capabilities</StyledH2>
+                </div>
+                <div className="desktop-view">
+                    <ServicesTab />
+                </div>
+                <div className="mobile-view">
+                    <Accordion />
+                </div>
+            </StyledServicesWrapper>
 
             <StyledHomeContainer>Other content here</StyledHomeContainer>
 

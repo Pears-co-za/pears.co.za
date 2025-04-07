@@ -122,6 +122,52 @@ export const StyledCTAWrapper = styled.div`
     }
 `;
 
+/* Services Section with Responsive Components */
+export const StyledServicesWrapper = styled.section`
+    background-color: #C6CEBE;
+    margin: 0 auto;
+    padding: 0;
+    
+    .services-title {
+        text-align: center;
+        padding-top: 4rem;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            padding-top: 3rem;
+            
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .desktop-view {
+        display: block;
+        
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    
+    .mobile-view {
+        display: none;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2rem 3rem;
+        
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+`;
+
 /* Home Contact Section */
 export const StyledHomeContactSection = styled.section`
     display: flex;
