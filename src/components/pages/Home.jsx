@@ -121,7 +121,11 @@ function Home() {
                 </div>
             </StyledServicesWrapper>
 
-            <StyledHomeContainer>Other content here</StyledHomeContainer>
+            <StyledHomeContainer>
+                <h3>Remaining sections:</h3>
+                <p>- Explore our insights</p>
+                <p>- Our Processes</p>
+                </StyledHomeContainer>
 
             <StyledHomeContactSection>
                 <FadeIn>
