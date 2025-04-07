@@ -8,7 +8,6 @@ import FadeIn from "../common/FadeIn";
 import Accordion from "../common/Accordion";
 import ServicesTab from "../common/ServicesTab"; 
 import {
-    StyledHomeContainer,
     StyledWhyChooseUsSection,
     StyledSectionTitle,
     StyledFeaturesGrid,
