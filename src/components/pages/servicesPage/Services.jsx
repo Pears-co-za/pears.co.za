@@ -134,8 +134,6 @@ const serviceContent = {
         ],
     },
     itAdvisoryCounsulting: {
-        // ID to link footer links
-        // id: "it-advisory",
         title: "IT Advisory & Consulting",
         description:
             "In todays fast-evolving digital landscape, businesses must adopt the right technologies and strategies to stay competitive. Our IT Advisory & Consulting services provide expert guidance to help organizations drive transformation, manage change, optimize IT infrastructure, and create effective technology roadmaps.",

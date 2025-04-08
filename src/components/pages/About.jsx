@@ -1,5 +1,5 @@
 // About.js
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../layout/Hero";
 import {
     StyledAboutContainer,
@@ -14,6 +14,10 @@ import {
 } from "../../styles/About.styles";
 
 function About() {
+
+        useEffect(() => {
+            window.scrollTo(0,0)
+        }, []);
     return (
         <>
             <Hero
