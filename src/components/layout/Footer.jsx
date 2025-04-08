@@ -14,6 +14,7 @@ import {
 } from "../../styles/Footer.styles";
 
 import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { colors } from "../../constants";
 
 function Footer() {
     return (
@@ -23,7 +24,7 @@ function Footer() {
                     <StyledFooterLogo>
                         <h2>Pears Consulting</h2>
                         <StyledFooterText>
-                            Because IT works better in pairs.
+                            Because <span style={{color: "black" }}>IT</span> works better in pairs.
                         </StyledFooterText>
                     </StyledFooterLogo>
                 </StyledFooterSection>
@@ -34,7 +35,7 @@ function Footer() {
                         <StyledFooterLink to="/about">
                             Our Work
                         </StyledFooterLink>
-                        <StyledFooterLink to="/about">
+                        <StyledFooterLink to="/about#">
                             Our Processes
                         </StyledFooterLink>
                     </StyledFooterLinks>
@@ -71,13 +72,10 @@ function Footer() {
                 <StyledFooterSection>
                     <StyledFooterHeading>Follow</StyledFooterHeading>
                     <StyledFooterSocialIcons>
-                    <StyledSocialIcon href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <StyledSocialIcon href="https://www.linkedin.com/in/pears-consulting-1842b635b/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </StyledSocialIcon>
-                    <StyledSocialIcon href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook />
-                    </StyledSocialIcon>
-                    <StyledSocialIcon href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <StyledSocialIcon href="https://www.instagram.com/pears.consulting/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram />
                     </StyledSocialIcon>
                 </StyledFooterSocialIcons>
