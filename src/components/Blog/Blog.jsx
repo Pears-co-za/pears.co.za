@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../layout/Hero";
 import { Link } from 'react-router-dom';
 import {
@@ -8,6 +8,10 @@ import FadeIn from "../common/FadeIn";
 import styles from './Blog.module.css';
 
 const Blog = ({ users }) => {
+
+        useEffect(() => {
+            window.scrollTo(0,0)
+        }, []);
     return (
         <StyledBlogContainer>
             <Hero
