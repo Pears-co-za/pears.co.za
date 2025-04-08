@@ -1,18 +1,13 @@
 import styled from "styled-components";
-import { colors } from "../constants";
+import { colors } from "../../constants";
 
-export const StyledBlogContainer = styled.div`
-    padding: 1rem 2rem;
-    margin-bottom: 4rem;
-     @media only screen and (max-width: 600px){
-        padding: 1rem 1rem;
-    }
+export const StyledBlogEntryContainer = styled.div`
+
 `;
 
 export const StyledDisplayHeading = styled.div`
     display:flex;
     flex-direction: column;
-    padding: 1rem 4rem;
     flex-wrap:wrap;
     word-break: normal;
 `;

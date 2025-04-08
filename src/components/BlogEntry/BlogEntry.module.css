@@ -1,0 +1,152 @@
+.blogEntry__container {
+    background-color: #fdfafa;
+    padding: .6rem;
+    border-radius: 1rem;
+}
+
+.previous__page {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.previous__page a {
+    text-decoration: none;
+    padding: 8px 1rem;
+    border-radius: 1rem;
+    background-color: #759066;
+    color: white;
+    font-size: .8rem;
+}
+
+.previous__page a:hover {
+    opacity: .8;
+}
+
+.card__profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user__info {
+    margin: 1.5rem 0;
+}
+
+.card__text {
+    text-align: center;
+}
+
+.user__name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card__h2 {
+    font-size: 18px;
+    margin-bottom: .6rem;
+}
+
+.blogEntry__container p {
+    font-size: 14px;
+}
+
+.card__p span {
+    font-weight: 700;
+}
+
+.card__p {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.quote {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.quote h1 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.card__image img {
+    border-radius: .6rem;
+    object-fit:cover;
+    height: 260px;
+    width: 100%;
+}
+
+.blogEntry__wrapper {
+    width: min(90%, 1300px);
+    margin: 2rem auto;
+    padding: 0rem 0 3rem 0;
+}
+
+@media (min-width:360px) {
+    .blogEntry__wrapper {
+        padding-left: clamp(1rem, 2vw, 3rem);
+        padding-right: clamp(1rem, 2vw, 3rem); 
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+    .card__p {
+        padding: 0 clamp(2rem, 10vw, 4rem);
+    }
+}
+
+@media (min-width:600px) {
+    .blogEntry__container .card {
+        text-align: center;
+    }
+
+    .blogEntry__wrapper {
+        padding: 0 5rem;
+    } 
+    
+    .card__image img {
+        object-fit:cover; 
+        height: 350px;
+        width: 350px;;
+    }
+}
+
+@media (min-width:1000px) {
+    .blogEntry__container .card {
+        display: flex;
+    }
+
+    .previous__page {
+        text-align: right;
+    }
+
+    .card__text {
+        text-align: left;
+       padding-left: 3.6rem;
+    }
+
+    .user__info {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .card__metadata {
+        padding-left: 1rem;
+    }
+
+    .blogEntry__container {
+        padding: 1.6rem;
+    }
+
+    .card__image {
+        align-self: center;
+    }
+
+    .card__image img {
+        object-fit:cover;
+        height: 500px;
+        width: 1700px;
+    }
+}

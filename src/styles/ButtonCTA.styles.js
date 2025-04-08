@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { colors } from '../constants';
 
 export const StyledButton = styled(Link)`
   background-color: #F0F0F0;
@@ -20,7 +21,7 @@ export const StyledButton = styled(Link)`
   }
   
   &:hover {
-    background-color: white;
+    background-color: ${colors.paleYellow};
     border: 1px solid black;
     
     svg {

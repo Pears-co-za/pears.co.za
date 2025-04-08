@@ -8,5 +8,5 @@ export const colors = {
   dark70: "#666666",
   
   yellow: "#F5D03D",
-  paleYellow: "#A39971",
+  paleYellow: "#CFB053",
 };

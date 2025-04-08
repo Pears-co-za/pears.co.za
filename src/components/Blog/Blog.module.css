@@ -1,0 +1,145 @@
+.blogWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.user {
+    width: min(90%, 1300px);
+    margin: 2.6rem auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem .5rem 2rem;
+}
+
+.intro img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0rem;  
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.intro > div:last-child > * {
+    padding-bottom: .8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 1rem;
+    height: 190px;
+    width: 300px;
+    object-fit: fill;
+}
+
+.card__link {
+    margin-left: auto;
+    padding: 8px 1rem;
+    border-radius: 1rem;
+    background-color: #759066;
+    color: white;
+}
+
+.card__link a {
+    text-decoration: none;
+    color: #fff;
+    
+    font-size: .8rem;
+}
+
+.card a:hover {
+    opacity: .8;
+}
+
+.card div:nth-child(2) {
+    text-align: left;
+}
+
+
+.card__text {
+    padding: 1rem 0;
+}
+
+.card__h2 {
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+.card__p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (min-width: 700px) {
+    .center__content {
+        display: flex;
+        justify-content: center;
+    }
+    .cards {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .intro img {
+        width: 210px;
+    }
+
+    .intro {
+        padding-bottom: 1rem;
+    }
+
+    .card {
+        max-width: 300px;
+        padding: 2rem 0;
+    }   
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+    .cards {
+        max-width: 710px;
+    }
+   
+}
+
+@media (min-width: 1000px) {
+    .cards {
+        margin-top: 2rem;
+        justify-content: flex-start;
+    }
+
+    .user {
+        display: flex;
+    }
+
+    .card {
+        max-width: 300px;
+        padding: .8rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        border-radius: 1rem;
+        background-color: #fdfafa;
+    }
+}

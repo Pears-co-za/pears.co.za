@@ -1,0 +1,43 @@
+import React from "react";
+import { ButtonCTA } from "../common/ButtonCTA";
+import {
+    StyledHeroSection,
+    StyledHeroContent,
+    StyledHeroText,
+    StyledHeroHeading,
+    StyledHeroSubtitle,
+    StyledBackgroundOverlay,
+} from "../../styles/Hero.styles";
+
+const Hero = ({
+    backgroundImage,
+    title,
+    subtitle,
+    buttonText,
+    buttonLink,
+    overlayOpacity = 0.5,
+    textAlign = "left",
+    fullHeight = true,
+}) => {
+    return (
+        <StyledHeroSection
+            $backgroundImage={backgroundImage}
+            $fullHeight={fullHeight}
+        >
+            <StyledBackgroundOverlay $opacity={overlayOpacity} />
+            <StyledHeroContent>
+                <StyledHeroText $textAlign={textAlign}>
+                    <StyledHeroHeading>{title}</StyledHeroHeading>
+                    {subtitle && (
+                        <StyledHeroSubtitle>{subtitle}</StyledHeroSubtitle>
+                    )}
+                    {buttonText && buttonLink && (
+                        <ButtonCTA to={buttonLink}>{buttonText}</ButtonCTA>
+                    )}
+                </StyledHeroText>
+            </StyledHeroContent>
+        </StyledHeroSection>
+    );
+};
+
+export default Hero;

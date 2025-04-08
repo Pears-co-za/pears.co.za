@@ -42,11 +42,10 @@ function Navbar() {
             <StyledNavContainer $isVisible={isVisible}>
                 <StyledLogo to="/">
                     <img
-                        src="./assets/pears-logo-with-name.png"
+                        src="/assets/pears-logo-with-name.png"
                         className="pears-logo"
-                        alt="pears bee logo"
+                        alt="pears logo"
                     />
-                    pears
                 </StyledLogo>
                 <StyledHamburger onClick={toggleMenu} $isOpen={isMenuOpen}>
                     <span></span>
@@ -62,11 +61,18 @@ function Navbar() {
                         Home
                     </StyledNavLink>
                     <StyledNavLink 
-                        to="/about"
+                        to="/about" 
                         className={location.pathname === "/about" ? "active" : ""}
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        About
+                        About Us
+                    </StyledNavLink>
+                    <StyledNavLink 
+                        to="/services"
+                        className={location.pathname === "/services" ? "active" : ""}
+                        onClick={() => setIsMenuOpen(false)}
+                    >
+                        Our Services
                     </StyledNavLink>
                     <StyledNavLink 
                         to="/blog"
@@ -88,7 +94,6 @@ function Navbar() {
                 $isOpen={isMenuOpen} 
                 onClick={() => setIsMenuOpen(false)}
             />
-            <div style={{ paddingTop: "74px" }} />
         </>
     );
 }

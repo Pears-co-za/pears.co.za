@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledAccordionContainer = styled.div`
     max-width: 1200px;
     margin: 0 auto;
+    /* background-color: #C6CEBE; */
 `;
 
 export const StyledAccordionItem = styled.div`
@@ -20,11 +21,13 @@ export const StyledAccordionHeader = styled.button`
     border: none;
     cursor: pointer;
     text-align: left;
+    color: ${({ $isOpen }) => ($isOpen ? "#3C4F31" : "#FFFFFF")};
 
     svg {
         transform: ${({ $isOpen }) =>
             $isOpen ? "rotate(180deg)" : "rotate(0deg)"};
         transition: transform 0.3s ease;
+        stroke: ${({ $isOpen }) => ($isOpen ? "#3C4F31" : "#FFFFFF")};
     }
 `;
 
@@ -32,6 +35,7 @@ export const StyledAccordionTitle = styled.h2`
     font-size: 2rem;
     font-weight: 500;
     margin: 0;
+    color: inherit;
 
     @media (max-width: 768px) {
         font-size: 1.6rem;
@@ -62,6 +66,7 @@ export const StyledAccordionList = styled.ul`
 export const StyledAccordionListItem = styled.li`
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    color: #3C4F31;
 
     &:last-child {
         margin-bottom: 0;
