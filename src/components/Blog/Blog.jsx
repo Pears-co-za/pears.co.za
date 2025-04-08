@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import Hero from "../layout/Hero";
 import { Link } from 'react-router-dom';
-import {
-    StyledBlogContainer
-} from "./Blog.styled";
 import FadeIn from "../common/FadeIn";
 import styles from './Blog.module.css';
 
@@ -13,7 +10,7 @@ const Blog = ({ users }) => {
             window.scrollTo(0,0)
         }, []);
     return (
-        <StyledBlogContainer>
+        <>
             <Hero
                 backgroundImage="/assets/blog-hero-bg.png"
                 title="THE BLOG"
@@ -51,7 +48,7 @@ const Blog = ({ users }) => {
                     </FadeIn>
                 </div>
             ))}
-        </StyledBlogContainer >
+        </ >
     );
 };
 

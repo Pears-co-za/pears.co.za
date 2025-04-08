@@ -527,33 +527,31 @@ const Services = () => {
         return () => {
             window.removeEventListener("resize", checkIfMobile);
         };
-
-    }, []); 
+    }, []);
 
     // Add this effect to check for URL hash changes
-useEffect(() => {
-    // Get tab from URL hash (without the # symbol)
-    const hash = location.hash.substring(1);
-    
-    // If a valid tab is specified in the hash, set it as active
-    if (hash && Object.keys(serviceContent).includes(hash)) {
-        setActiveTab(hash);
-    }
-}, [location.hash]); // This ensures the component updates when hash changes
+    useEffect(() => {
+        // Get tab from URL hash (without the # symbol)
+        const hash = location.hash.substring(1);
 
-// Add this useEffect to scroll to top when activeTab changes
-useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [activeTab]);
+        // If a valid tab is specified in the hash, set it as active
+        if (hash && Object.keys(serviceContent).includes(hash)) {
+            setActiveTab(hash);
+        }
+    }, [location.hash]); // This ensures the component updates when hash changes
+
+    // Add this useEffect to scroll to top when activeTab changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [activeTab]);
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
-        window.history.replaceState(null, '', `/services#${tab}`);
+        window.history.replaceState(null, "", `/services#${tab}`);
     };
 
     const handleMobileSelectChange = (e) => {
         setActiveTab(e.target.value);
-        
     };
 
     // Render tabs for desktop or dropdown for mobile
@@ -645,7 +643,7 @@ useEffect(() => {
             <ServiceContentArea>
                 <ServiceTitle>{activeService.title}</ServiceTitle>
                 <ServiceDescription>
-                    {activeService.description}
+                    {activeService.description} 
                 </ServiceDescription>
 
                 {activeService.sections &&

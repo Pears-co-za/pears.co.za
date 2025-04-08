@@ -126,6 +126,7 @@ export const ServiceDescription = styled.p`
     line-height: 1.6;
     color: ${colors.gray};
     max-width: 900px;
+    margin-bottom: 2rem;
 `;
 
 export const SectionsContainer = styled.div`

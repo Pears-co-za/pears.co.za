@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../constants";
 
-export const StyledBlogContainer = styled.div`
-   
-`;
-
 export const StyledDisplayHeading = styled.div`
     display:flex;
     flex-direction: column;
