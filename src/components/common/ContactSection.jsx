@@ -180,13 +180,13 @@ function ContactSection({
                     <StyledContactIntro>
                         <StyledH1>Ready?<br />Let's Talk</StyledH1>
                         <StyledSocialIcons>
-                            <WhatsAppIcon href="https://wa.me/+27123456789" target="_blank" rel="noopener noreferrer">
+                            <WhatsAppIcon href="https://wa.me/+27647572457" target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp />
                             </WhatsAppIcon>
-                            <LinkedInIcon href="https://linkedin.com/company/wearepears" target="_blank" rel="noopener noreferrer">
+                            <LinkedInIcon href="https://www.linkedin.com/in/pears-consulting-1842b635b/" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin />
                             </LinkedInIcon>
-                            <PhoneIcon href="tel:+27123456789">
+                            <PhoneIcon href="tel:+27647572457">
                                 <FaPhone />
                             </PhoneIcon>
                         </StyledSocialIcons>

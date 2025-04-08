@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FadeIn from "../common/FadeIn";
 import Hero from "../layout/Hero";
 import {
@@ -10,6 +10,10 @@ import {
 import ContactSection from "../common/ContactSection";
 
 function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, []);
     return (
         <StyledContactPage>
             <Hero
