@@ -43,7 +43,7 @@ function About() {
                         </StyledSectionText>
 
                         <StyledSectionText>
-                            Our team of experts partners with organizations of
+                            Our team of experts partner with organizations of
                             all sizes to streamline operations, enhance user
                             experiences, and future-proof their technology.
                             Whether it's optimizing existing systems or building
